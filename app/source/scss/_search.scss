@@ -25,6 +25,12 @@
             position: absolute;
             right: 4px;
 
+            .search__icon_svg {
+                path {
+                    transition: 200ms;
+                }
+            }
+
             &:hover {
                 background: #7421B0;
 

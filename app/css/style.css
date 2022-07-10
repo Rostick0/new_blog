@@ -291,6 +291,9 @@ ul li {
   position: absolute;
   right: 4px;
 }
+.search .search__top .search__icon .search__icon_svg path {
+  transition: 200ms;
+}
 .search .search__top .search__icon:hover {
   background: #7421B0;
 }
