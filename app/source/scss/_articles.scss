@@ -1,0 +1,112 @@
+.articles {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    .article {
+        .article__image {
+            margin-bottom: -11px;
+
+            .article__img {
+                border-radius: 8px 8px 0px 0px;
+    
+                width: 100%;
+            }
+        }
+    
+        .article__info {
+            padding: 28px;
+
+            .article__text {
+                display: flex;
+                flex-direction: column;
+                row-gap: 8px;
+
+                margin-top: 8px;
+                margin-bottom: 23px;
+
+                .article__title {
+                    font-size: 24px;
+                    font-weight: 500;
+    
+                    line-height: 155%;
+                }
+    
+                .article__subtitle {
+                    color: #505050;
+    
+                    font-size: 18px;
+    
+                    line-height: 150%;
+                }
+            }
+    
+            .article__tags {
+                display: flex;
+                column-gap: 10.33px;
+                
+                .article__tag {
+                    margin-left: -10px;
+    
+                    .article__tag_link {
+                        border-radius: 8px;
+    
+                        color: #898989;
+    
+                        transition: 200ms;
+
+                        line-height: 20px;
+    
+                        padding: 10px;
+    
+                        &:hover {
+                            background: #F7F7F8;
+    
+                            color: #7421B0;
+                        }
+                    }
+                }
+            }
+    
+            .article__bottom {
+                display: flex;
+                align-items: center ;
+                justify-content: space-between;
+    
+                margin-top: 31px;
+        
+                .article__user {
+        
+                    .article__user_href {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 8px;
+        
+                        .article__user_img {
+                            border-radius: 50%;
+
+                            width: 32px;
+                            height: 32px;
+                        }
+        
+                        .article__user_name {
+                            color: #898989;
+
+                            line-height: 150%;
+                            
+                            font-size: 14px;
+                        }
+                    }
+                }
+        
+                .article__date {
+                    color: #898989;
+        
+                    font-size: 12px;
+
+                    line-height: 150%;
+                }
+            }
+        }
+    }
+}

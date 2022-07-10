@@ -1,0 +1,139 @@
+.aside {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 210px;
+
+    .aside__logo {
+        background: #7421B0;
+
+        border-radius: 8px;
+
+        display: flex;
+        justify-content: center;
+
+        padding: 15px 0;
+        margin-bottom: 22px;
+    }
+
+    .aside__nav {
+
+        .aside__navigation {
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+
+            .aside__navigation_item {
+                border-radius: 8px;
+
+                transition: 200ms;
+
+                &:hover {
+                    background: #FFFFFF;
+
+                    .aside__navigation_link {
+                        color: #7421B0;
+
+                        .aside__navigation_svg_fill {
+                            fill: #7421B0;
+                        }
+
+                        .aside__navigation_svg_stroke {
+                            stroke: #7421B0;
+                        }
+                    }
+                }
+
+                .aside__navigation_link {
+                    color: #000000;
+                    
+                    display: inline-flex;
+                    align-items: center;
+                    column-gap: 10px;
+
+                    padding: 0 16px;
+
+                    height: 44px;
+                    width: 100%;
+
+                    .aside__navigation_text {
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .aside__popular-tags {
+        margin-top: 30px;
+
+        .aside__popular-tags_title {
+            color: #898989;
+
+            font-weight: 500;
+
+            line-height: 20px;
+
+            padding: 0 16px;
+
+            margin-bottom: 12px;
+        }
+
+        .popular-tag {
+            border-radius: 8px;
+
+            transition: 200ms;
+
+            &:hover {
+                background: #E4D8ED;
+
+                .popular-tag__href {
+                    color: #7421B0;
+
+                    text-decoration: underline;
+                }
+            }
+
+            .popular-tag__href {
+                color: #000000;
+
+                transition: 200ms;
+
+                display: flex;
+                align-items: center;
+
+                padding: 0 16px;
+
+                width: 100%;
+                height: 44px;
+            }
+        }
+    }
+
+    .aside__policy {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+
+        margin-top: 70px;
+
+        .aside__policy_item {
+            .aside__policy_href {
+                color: #000000;
+
+                font-size: 14px;
+
+                line-height: 20px;
+
+                transition: 200ms;
+
+                padding: 0 16px;
+
+                &:hover {
+                    color: #7421B0;
+                }
+            }
+        }
+    }
+}

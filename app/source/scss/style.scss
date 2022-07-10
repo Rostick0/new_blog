@@ -1,0 +1,49 @@
+@import './reset';
+@import './fonts';
+@import './UI';
+@import './aside';
+@import './recommendations';
+@import './articles';
+
+.wrapper {
+    background: #ECECF0;
+
+    font-family: 'Rubik';
+
+    color: #000000;
+}
+
+
+
+.container {
+    padding: 40px;
+}
+
+
+
+
+.home {
+    display: flex;
+    column-gap: 20px;
+
+    .content {
+        flex: 1 1 auto;
+        max-width: 785px;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    
+
+
+    .recommendations {
+        display: none;
+    }
+}
