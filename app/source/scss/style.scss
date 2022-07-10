@@ -4,6 +4,7 @@
 @import './aside';
 @import './recommendations';
 @import './articles';
+@import './search';
 
 .wrapper {
     background: #ECECF0;
@@ -22,7 +23,7 @@
 
 
 
-.home {
+.page {
     display: flex;
     column-gap: 20px;
 
@@ -38,12 +39,5 @@
 @media (max-width: 768px) {
     .container {
         padding: 20px;
-    }
-    
-    
-
-
-    .recommendations {
-        display: none;
     }
 }

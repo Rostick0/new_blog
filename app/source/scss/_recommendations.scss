@@ -57,3 +57,9 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .recommendations {
+        display: none;
+    }
+}

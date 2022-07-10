@@ -29,7 +29,8 @@
 
                 transition: 200ms;
 
-                &:hover {
+                &:hover,
+                &._active {
                     background: #FFFFFF;
 
                     .aside__navigation_link {
