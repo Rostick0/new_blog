@@ -82,12 +82,9 @@ function slider(slides) {
     let counterSlideItem = translateXCounter / -100 - 1
 
     postSliderList.forEach((elem, index) => {
-        console.log(counterSlideItem)
         if (elem.classList.contains('_active')) {
             elem.classList.remove('_active');
         }
-        
-        console.log(index)
 
         if (index === counterSlideItem) {
             elem.classList.add('_active');
