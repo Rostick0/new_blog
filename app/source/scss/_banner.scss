@@ -1,0 +1,44 @@
+.banner {
+    .banner__inner {
+        background: url('../img/banner-background.png');
+        background-size: auto 83%;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+
+        display: flex;
+        flex-direction: column;
+    
+        padding: 32px 40px;
+    
+        height: 232px;
+
+        .banner__title {
+            font-size: 20px;
+            font-weight: 500;
+    
+            line-height: 20px;
+    
+            margin-bottom: 20px;
+        }
+    
+        .banner__form {
+            display: flex;
+            align-items: flex-end;
+            column-gap: 12px;
+            flex: 1 1 auto;
+    
+            .banner__input {
+                width: 380px;
+                height: 44px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        .banner__inner {
+            background: none;
+        }
+    }
+}

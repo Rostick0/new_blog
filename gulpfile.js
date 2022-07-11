@@ -54,6 +54,7 @@ function serve() {
 
     watch('app/**.html', series(html)).on('change', reload);
     watch('app/source/scss/*.scss', series(scss)).on('change', reload);
+    watch('app/js/**.js', series(js)).on('change', reload);
 }
 
 exports.build = series(scss, html, js, fonts, img);

@@ -20,6 +20,15 @@ a:active {
 	text-decoration: none;
 }
 
+button {
+	background: none;
+	cursor: pointer;
+}
+
 ul li {
     list-style: none;
+}
+
+textarea {
+	resize: none;
 }

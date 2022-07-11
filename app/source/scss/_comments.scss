@@ -1,3 +1,124 @@
 .comments {
     padding: 44px 40px 64px;
+
+    .comments__top {
+        margin-bottom: 64px;
+
+        .comments__top_content {
+            display: flex;
+            column-gap: 12px;
+            margin-bottom: 46px;
+            
+            .comment__top_image {
+                .comment__top_img {
+                    border-radius: 50%;
+
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+
+            .comment__top_text {
+                display: flex;
+                flex-direction: column;
+                row-gap: 8px;
+
+                .comment__top_name {
+                    font-weight: 500;
+
+                    line-height: 20px;
+                }
+
+                .comment__top_answer {
+                    font-size: 18px;
+
+                    line-height: 150%;
+                }
+            }
+        }
+
+        .comments__top_form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            row-gap: 12px;
+
+            .comments__top_textarea {
+                height: 100px;
+
+                &::placeholder {
+                    color: #19191D;
+                }
+            }
+
+            .comments__top_button {
+
+            }
+        }
+    }
+
+    .comments__bottom {
+        .comments__count {
+            color: #898989;
+
+            font-size: 14px;
+
+            line-height: 150%;
+
+            margin-bottom: 28px;
+        }
+
+        .comments__aswer {
+            .comment__answer {
+                display: flex;
+                column-gap: 8px;
+
+                .comment-user__image {
+                    .comment-user__img {
+                        border-radius: 50%;
+
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+
+                .comment-user__text {
+                    font-size: 14px;
+
+                    .comment-user__text_short-info {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .comment-user__name {
+                            font-weight: 500;
+
+                            line-height: 20px;
+                        }
+
+                        .comment-user__date {
+                            color: #898989;
+
+                            font-size: 12px;
+
+                            line-height: 20px;
+                        }
+                    }
+
+                    .comment-user__message {
+                        line-height: 150%;
+
+                        margin-top: 4px;
+                        margin-bottom: 6px;
+                    }
+
+                    .comment-user__reply {
+                        color: #898989;
+
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
 }
