@@ -5,6 +5,9 @@
 @import './recommendations';
 @import './articles';
 @import './search';
+@import './post';
+@import './aside-short';
+@import './comments';
 
 .wrapper {
     background: #ECECF0;
@@ -29,7 +32,7 @@
 
     .content {
         flex: 1 1 auto;
-        max-width: 785px;
+        max-width: 900px;
     }
 }
 
