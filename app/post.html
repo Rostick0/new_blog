@@ -5,60 +5,8 @@
     <div class="wrapper">
         <div class="container">
             <div class="page search-page">
-                <aside class="aside-short">
-                    <div class="aside-short__inner">
-                        <div class="aside-short__item style-block">
-                            <div class="aside-short__item_icon">
-                                <svg class="aside-short__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 8H10C8.89543 8 8 8.89543 8 10V18C8 19.1046 8.89543 20 10 20H18C19.1046 20 20 19.1046 20 18V10C20 8.89543 19.1046 8 18 8Z" stroke="#898989" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M16 8V6C16 5.46957 15.7893 4.96086 15.4142 4.58579C15.0391 4.21071 14.5304 4 14 4H6C5.46957 4 4.96086 4.21071 4.58579 4.58579C4.21071 4.96086 4 5.46957 4 6V14C4 14.5304 4.21071 15.0391 4.58579 15.4142C4.96086 15.7893 5.46957 16 6 16H8" stroke="#898989" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <div class="aside-short__text">
-                                    Copy link
-                                </div>  
-                            </div>                  
-                        </div>
-                        <div class="aside-short__item style-block">
-                            <div class="aside-short__item_icon">
-                                <svg class="aside-short__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6 15C7.65685 15 9 13.6569 9 12C9 10.3431 7.65685 9 6 9C4.34315 9 3 10.3431 3 12C3 13.6569 4.34315 15 6 15Z" stroke="#898989" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M18 9C19.6569 9 21 7.65685 21 6C21 4.34315 19.6569 3 18 3C16.3431 3 15 4.34315 15 6C15 7.65685 16.3431 9 18 9Z" stroke="#898989" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M18 21C19.6569 21 21 19.6569 21 18C21 16.3431 19.6569 15 18 15C16.3431 15 15 16.3431 15 18C15 19.6569 16.3431 21 18 21Z" stroke="#898989" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M8.69995 10.7L15.3 7.30005" stroke="#898989" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M8.69995 13.3L15.3 16.7" stroke="#898989" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                            
-                                <div class="aside-short__text">
-                                    Share
-                                </div>
-                            </div>
-                            <div class="aside-short__menu">
-                                <ul class="aside-short__list style-block">
-                                    <li class="aside-short__list_item">
-                                        <a class="aside-short__list_href" href="">
-                                            Share in Twitter
-                                        </a>
-                                    </li>
-                                    <li class="aside-short__list_item">
-                                        <a class="aside-short__list_href" href="">
-                                            Share in Linkedin
-                                        </a>
-                                    </li>
-                                    <li class="aside-short__list_item">
-                                        <a class="aside-short__list_href" href="">
-                                            Share in Reddit
-                                        </a>
-                                    </li>
-                                    <li class="aside-short__list_item">
-                                        <a class="aside-short__list_href" href="">
-                                            Share in Facebook
-                                        </a>
-                                    </li>
-                                </ul> 
-                            </div>                   
-                        </div>     
-                    </div>
-                </aside>
-    
+                @@include('components/aside-short.html')
+                
                 <div class="content search-page__content">
                     <div class="post style-block">
                         <div class="post__main-image">
@@ -76,7 +24,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <date class="publication__date">
+                                <date class="post__date publication__date">
                                     Published July 02, 2022
                                 </date>
                             </div>
@@ -151,9 +99,6 @@
                                 </div>
                                 <div class="post__slider__switches">
                                     <ul class="post__slider_lists">
-                                        <li class="post__slider_list _active"></li>
-                                        <li class="post__slider_list"></li>
-                                        <li class="post__slider_list"></li>
                                     </ul>
                                     <div class="post__slider_arrows">
                                         <div class="post__slider_arrow">
@@ -195,7 +140,7 @@
                                 </div>
                             </div>
                             <p class="post__p">
-                                Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu ius.
+                                Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his:
                             </p>
                             <ol class="list__ol post__list_ol">
                                 <li class="item__list">
@@ -245,7 +190,7 @@
                 @@include('components/recommendations.html')
             </div> 
 
-            <!-- <div class="modal">
+            <div class="modal">
                 <div class="modal__content style-block">
                     <div class="modal__close">
                         <svg class="modal__close_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -283,7 +228,7 @@
                         </li>
                     </ul>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
 

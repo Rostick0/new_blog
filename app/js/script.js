@@ -65,12 +65,22 @@ removeDisabledButton(bannerInput, bannerButton);
 
 
 
+// slider
+
 const postSlider = document.querySelector('.post__slider');
 const postSliderArrowLeft = document.querySelector('.post__slider_arrow');
 const postSliderArrowRight = document.querySelector('.post__slider_arrow_right');
 const postSliderImg = document.querySelectorAll('.post__slider_img');
-const postSliderList = document.querySelectorAll('.post__slider_list');
+const postSliderLists = document.querySelector('.post__slider_lists');
 let translateXCounter = -100;
+
+// render switch items
+
+for (let i = 0; i < postSliderImg.length; i++) {
+    postSliderLists.insertAdjacentHTML('afterbegin', '<li class="post__slider_list"></li>');
+}
+
+const postSliderList = document.querySelectorAll('.post__slider_list');
 
 function slider(slides) {
     let counterSlide = translateXCounter
@@ -79,7 +89,7 @@ function slider(slides) {
         elem.style = `transform: translateX(${counterSlide+=100}%);`
     })
 
-    let counterSlideItem = translateXCounter / -100 - 1
+    let counterSlideItem = translateXCounter / -100 - 1;
 
     postSliderList.forEach((elem, index) => {
         if (elem.classList.contains('_active')) {
@@ -91,6 +101,14 @@ function slider(slides) {
         }
     })
 }
+
+postSliderList.forEach((elem, index) => {
+    elem.addEventListener('click', e => {
+        translateXCounter = -100 * (index + 1);
+
+        slider(postSliderImg);
+    })
+})
 
 postSliderArrowLeft.addEventListener('click', e => {
     if (translateXCounter >= -100) {
