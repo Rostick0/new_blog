@@ -131,3 +131,33 @@ postSliderArrowRight.addEventListener('click', e => {
 })
 
 slider(postSliderImg);
+
+
+
+
+// modal
+
+const modal = document.querySelector('.modal');
+const modalClose = document.querySelector('.modal__close');
+
+modal.addEventListener('click', e => {
+    if (e.target.classList[0] == 'modal') {
+        removeModal();
+    }
+});
+
+modalClose.addEventListener('click', e => {
+    removeModal();
+})
+
+function activeAnimation() {
+    modal.style.top = '0';
+    modal.style.animation = 'blackout-modal 1.5s forwards';
+}
+
+function removeModal() {
+    modal.style.animation = 'blackout-modal 1.5s forwards reverse';
+    modal.style.top = '-100%';
+}
+
+activeAnimation()

@@ -17,3 +17,12 @@
         display: auto;
     }
 }
+
+@keyframes blackout-modal {
+    0% {
+        background: none;
+    }
+    100% {
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
