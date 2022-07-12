@@ -332,10 +332,11 @@ textarea {
 
 @media (max-width: 480px) {
   .aside {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0);
     position: fixed;
     left: 0;
     top: 0;
+    transition: 400ms;
     transform: translateX(-100%);
     max-width: 100%;
   }
@@ -349,21 +350,24 @@ textarea {
   .aside .aside__inner .aside__close {
     display: flex;
     flex-direction: column;
-  }
-  .aside .aside__inner .aside__close._active {
     border: 1px solid #7421B0;
     row-gap: 4.5px;
+    margin: 16px;
+    margin-top: 12px;
   }
-  .aside .aside__inner .aside__close._active span {
+  .aside .aside__inner .aside__close span {
     margin-left: -6px;
   }
-  .aside .aside__inner .aside__close._active span:first-child, .aside .aside__inner .aside__close._active span:last-child {
+  .aside .aside__inner .aside__close span:first-child {
     opacity: 0;
   }
-  .aside .aside__inner .aside__close._active span:nth-child(2) {
+  .aside .aside__inner .aside__close span:last-child {
+    opacity: 0;
+  }
+  .aside .aside__inner .aside__close span:nth-child(2) {
     transform: rotate(45deg) translate(25%, -25%);
   }
-  .aside .aside__inner .aside__close._active span:nth-child(3) {
+  .aside .aside__inner .aside__close span:nth-child(3) {
     transform: rotate(-45deg) translate(25%, -25%);
   }
 }
@@ -1131,16 +1135,16 @@ textarea {
     display: auto;
   }
 }
-@-webkit-keyframes blackout-modal {
-  0% {
+@-webkit-keyframes blackout {
+  50% {
     background: none;
   }
   100% {
     background: rgba(0, 0, 0, 0.5);
   }
 }
-@keyframes blackout-modal {
-  0% {
+@keyframes blackout {
+  50% {
     background: none;
   }
   100% {
@@ -1149,8 +1153,9 @@ textarea {
 }
 .header-fixed {
   background: #7421B0;
-  display: flex;
+  display: none;
   align-items: center;
+  justify-content: space-between;
   padding: 12px 16px;
   position: fixed;
   left: 0;
@@ -1158,7 +1163,33 @@ textarea {
   width: 100%;
   height: 60px;
 }
+.header-fixed .header-fixed__active {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 4px;
+  transition: 200ms;
+  width: 36px;
+  height: 36px;
+}
+.header-fixed .header-fixed__active span {
+  background: #000000;
+  border-radius: 5px;
+  display: inline-block;
+  transition: 200ms;
+  width: 18px;
+  height: 2px;
+}
 
+@media (max-width: 480px) {
+  .header-fixed {
+    display: flex;
+  }
+}
 .wrapper {
   background: #ECECF0;
   font-family: "Rubik";

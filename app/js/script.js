@@ -155,13 +155,42 @@ if (modal) {
     
     function activeAnimation() {
         modal.style.top = '0';
-        modal.style.animation = 'blackout-modal 1.5s forwards';
+        modal.style.animation = 'blackout 1.5s forwards';
     }
     
     function removeModal() {
-        modal.style.animation = 'blackout-modal 1.5s forwards reverse';
+        modal.style.animation = 'blackout 1.5s forwards reverse';
         modal.style.top = '-100%';
     }
     
     activeAnimation();
+}
+
+
+// burger-menu
+
+const headerFixedActive = document.querySelector('.header-fixed__active');
+const asideClose = document.querySelector('.aside__close');
+const aside = document.querySelector('.aside');
+
+if (headerFixedActive && asideClose && aside) {
+    aside.addEventListener('click', e => {
+        if (e.target.classList[0] == 'aside') {
+            removeMenu();
+        }
+    });
+
+    headerFixedActive.addEventListener('click', e => activeMenu())
+
+    asideClose.addEventListener('click', e => removeMenu())
+
+    function activeMenu() {
+        aside.style.transform = 'translateX(0)';
+        aside.style.animation = 'blackout 1s forwards';
+    }
+
+    function removeMenu() {
+        aside.style.transform = 'translateX(-100%)';
+        aside.style.animation = '';
+    }
 }
