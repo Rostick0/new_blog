@@ -102,33 +102,35 @@ function slider(slides) {
     })
 }
 
-postSliderList.forEach((elem, index) => {
-    elem.addEventListener('click', e => {
-        translateXCounter = -100 * (index + 1);
+if (postSliderList && postSliderArrowLeft && postSliderArrowRight) {
+    postSliderList.forEach((elem, index) => {
+        elem.addEventListener('click', e => {
+            translateXCounter = -100 * (index + 1);
+    
+            slider(postSliderImg);
+        })
+    });
 
+    postSliderArrowLeft.addEventListener('click', e => {
+        if (translateXCounter >= -100) {
+            return;
+        }
+    
+        translateXCounter += 100
+    
         slider(postSliderImg);
-    })
-})
+    });
 
-postSliderArrowLeft.addEventListener('click', e => {
-    if (translateXCounter >= -100) {
-        return;
-    }
-
-    translateXCounter += 100
-
-    slider(postSliderImg);
-})
-
-postSliderArrowRight.addEventListener('click', e => {
-    if (postSliderImg.length * -100 >= translateXCounter) {
-        return;
-    }
-
-    translateXCounter -= 100;
-
-    slider(postSliderImg);
-})
+    postSliderArrowRight.addEventListener('click', e => {
+        if (postSliderImg.length * -100 >= translateXCounter) {
+            return;
+        }
+    
+        translateXCounter -= 100;
+    
+        slider(postSliderImg);
+    });
+}
 
 slider(postSliderImg);
 
@@ -140,24 +142,26 @@ slider(postSliderImg);
 const modal = document.querySelector('.modal');
 const modalClose = document.querySelector('.modal__close');
 
-modal.addEventListener('click', e => {
-    if (e.target.classList[0] == 'modal') {
+if (modal) {
+    modal.addEventListener('click', e => {
+        if (e.target.classList[0] == 'modal') {
+            removeModal();
+        }
+    });
+    
+    modalClose.addEventListener('click', e => {
         removeModal();
+    })
+    
+    function activeAnimation() {
+        modal.style.top = '0';
+        modal.style.animation = 'blackout-modal 1.5s forwards';
     }
-});
-
-modalClose.addEventListener('click', e => {
-    removeModal();
-})
-
-function activeAnimation() {
-    modal.style.top = '0';
-    modal.style.animation = 'blackout-modal 1.5s forwards';
+    
+    function removeModal() {
+        modal.style.animation = 'blackout-modal 1.5s forwards reverse';
+        modal.style.top = '-100%';
+    }
+    
+    activeAnimation();
 }
-
-function removeModal() {
-    modal.style.animation = 'blackout-modal 1.5s forwards reverse';
-    modal.style.top = '-100%';
-}
-
-activeAnimation()
