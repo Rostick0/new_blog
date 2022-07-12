@@ -69,9 +69,40 @@
         }
 
         .comments__aswer {
+            display: flex;
+            flex-direction: column;
+
+            .comments__aswer {
+                margin-left: 40px;
+                padding-left: 18px;
+
+                .comment-user__image {
+                    position: relative;
+
+                    &::before {
+                        // background: #CECECE;
+                        border-radius: 0 0 0 3px;
+                        border-left: 1px solid #CECECE;
+                        border-bottom: 1px solid #CECECE;
+
+                        content: "";
+
+                        position: absolute;
+                        top: -26px;
+                        left: -18px;
+
+                        width: 11px;
+                        height: 42px;
+                    }
+                }
+            }
+
             .comment__answer {
                 display: flex;
                 column-gap: 8px;
+
+                margin-top: 32px;
+
 
                 .comment-user__image {
                     .comment-user__img {
