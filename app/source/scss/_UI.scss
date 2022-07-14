@@ -58,6 +58,8 @@
 
     &:disabled {
         background: #d6bde7;
+
+        cursor: not-allowed;
     }
 }
 
