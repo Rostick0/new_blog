@@ -12,6 +12,7 @@
 @import './modal';
 @import './animations';
 @import './header-fixed';
+@import './banner-subscribed';
 
 .wrapper {
     background: #ECECF0;
@@ -19,6 +20,8 @@
     font-family: 'Rubik';
 
     color: #000000;
+
+    min-height: 100vh;
 }
 
 
@@ -36,7 +39,7 @@
 
     .content {
         flex: 1 1 auto;
-        max-width: 900px;
+        width: 100%;
     }
 }
 
@@ -46,5 +49,11 @@
 @media (max-width: 768px) {
     .container {
         padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page {
+        display: block;
     }
 }

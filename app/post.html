@@ -134,9 +134,16 @@
                             <p class="post__p">
                                 Nulla aliquam per te, vis omnes lobortis ocurreret an. Ex per omnis feugait, vim eu voluptaria elaboraret. Ea ipsum constituto instructior est, cibo iriure facilisis ut per. Et posse equidem aliquando eos, nobis lobortis definitionem eos an.
                             </p>
-                            <div class="post__image">
-                                <div class="post__image_alignment">
-                                    <img class="post__img" src="img/img-post.png" alt="">
+                            <div class="post__video">
+                                <div class="post__video_alignment">
+                                    <div class="video__start">
+                                        <svg class="video__start_svg" width="68" height="48" viewBox="0 0 68 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="68" height="48" rx="6" transform="matrix(-1 0 0 1 68 0)" fill="#7421B0"/>
+                                            <path d="M42.5 23.134C43.1667 23.5189 43.1667 24.4811 42.5 24.866L30.5 31.7942C29.8333 32.1791 29 31.698 29 30.9282L29 17.0718C29 16.302 29.8333 15.8209 30.5 16.2058L42.5 23.134Z" fill="white"/>
+                                        </svg>                                            
+                                    </div>
+                                    <!-- <img class="post__img" src="img/img-post.png" alt=""> -->
+                                    <video class="post__video-elem" src="img/Desktop 2022.06.24 - 13.17.36.02.mp4"></video>
                                 </div>
                             </div>
                             <p class="post__p">
@@ -162,73 +169,16 @@
                         </div>
                     </div>
 
-                    <div class="banner style-block">
-                        <div class="banner__inner">
-                            <div class="banner__title">
-                                Useful newsletter
-                            </div>
-                            <ul class="banner__list list__ul">
-                                <li class="list__item">
-                                    Two letters a month
-                                </li>
-                                <li class="list__item">
-                                    We do not share your personal information
-                                </li>
-                            </ul>
-                            <form class="banner__form" action="">
-                                <input class="banner__input input" type="text" placeholder="Enter your e-mail">
-                                <button class="banner__button button " disabled>
-                                    Subscribe
-                                </button>
-                            </form>
-                        </div>
-                    </div>
+                    @@include('components/banner.html')
 
                     @@include('components/comments.html')
                 </div>
 
                 @@include('components/recommendations.html')
-            </div> 
 
-            <!-- <div class="modal">
-                <div class="modal__content style-block">
-                    <div class="modal__close">
-                        <svg class="modal__close_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 6L6 18" stroke="#898989" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M6 6L18 18" stroke="#898989" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>                                                              
-                    </div>
-                    <div class="modal__title">
-                        Log in to submit your reply
-                    </div>
-                    <ul class="modal__socials">
-                        <li class="modal__social">
-                            <a class="modal__link" href="">
-                                <img class="modal__link_img" src="img/Google.svg" alt="">
-                                <div class="modal__link_text">
-                                    Log in with Google
-                                </div>
-                            </a>
-                        </li>
-                        <li class="modal__social">
-                            <a class="modal__link" href="">
-                                <img class="modal__link_img" src="img/Facebook.svg" alt="">
-                                <div class="modal__link_text">
-                                    Log in with Facebook
-                                </div>
-                            </a>
-                        </li>
-                        <li class="modal__social">
-                            <a class="modal__link" href="">
-                                <img class="modal__link_img" src="img/Twitter.svg" alt="">
-                                <div class="modal__link_text">
-                                    Log in with Twitter
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div> -->
+                @@include('components/modal.html')
+                <div class="margin-bottom-fixed"></div>
+            </div> 
         </div>
     </div>
 

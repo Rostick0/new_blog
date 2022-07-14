@@ -1,5 +1,5 @@
 .comments {
-    padding: 44px 40px 64px;
+    padding: 44px 20px 32px;
 
     .comments__top {
         margin-bottom: 8px;
@@ -75,6 +75,17 @@
             .comments__aswer {
                 margin-left: 40px;
                 padding-left: 18px;
+
+                position: relative;
+
+                &:hover {
+                    .comment-user__image {
+                        &::before {
+                            border-left: 1px solid #7421B0;
+                            border-bottom: 1px solid #7421B0;
+                        }
+                    }
+                }
 
                 .comment__answer {
                     &:first-child {
@@ -215,7 +226,7 @@
 
 @media (max-width: 480px) {
     .comments {
-        padding: 44px 40px 64px;
+        padding: 24px 16px 32px;
     
         .comments__top {
             margin-bottom: 32px;
@@ -285,6 +296,10 @@
             }
     
             .comments__aswer {
+                .comments__aswer {
+                    margin-left: 0;
+                }
+
                 .comment__answer {
                     display: flex;
                     column-gap: 8px;

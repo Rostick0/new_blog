@@ -65,7 +65,8 @@
 
 .tags {
     display: flex;
-    column-gap: 10.33px;
+    flex-wrap: wrap;
+    grid-gap: 10.33px;
     
     .tag {
         margin-left: -10px;
@@ -198,4 +199,8 @@
             transition: 200ms;
         }
     }
+}
+
+.margin-bottom-fixed {
+    height: 70px;
 }

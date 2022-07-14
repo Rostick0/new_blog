@@ -61,6 +61,14 @@ const bannerButton = document.querySelector('.banner__button');
 const commentsTopTextarea = document.querySelector('.comments__top_textarea');
 const commentsTopButton = document.querySelector('.comments__top_button');
 
+if (commentsTopButton) {
+    commentsTopButton.addEventListener('click', e => {
+        e.preventDefault();
+    
+        activeModal();
+    });
+}
+
 removeDisabledButton(commentsTopTextarea, commentsTopButton);
 removeDisabledButton(bannerInput, bannerButton);
 
@@ -75,14 +83,6 @@ const postSliderArrowRight = document.querySelector('.post__slider_arrow_right')
 const postSliderImg = document.querySelectorAll('.post__slider_img');
 const postSliderLists = document.querySelector('.post__slider_lists');
 let translateXCounter = -100;
-
-// render switch items
-
-for (let i = 0; i < postSliderImg.length; i++) {
-    postSliderLists.insertAdjacentHTML('afterbegin', '<li class="post__slider_list"></li>');
-}
-
-const postSliderList = document.querySelectorAll('.post__slider_list');
 
 function slider(slides) {
     let counterSlide = translateXCounter
@@ -105,6 +105,14 @@ function slider(slides) {
 }
 
 if (postSliderList && postSliderArrowLeft && postSliderArrowRight) {
+    // render switch items
+
+    for (let i = 0; i < postSliderImg.length; i++) {
+        postSliderLists.insertAdjacentHTML('afterbegin', '<li class="post__slider_list"></li>');
+    }
+
+    const postSliderList = document.querySelectorAll('.post__slider_list');
+
     postSliderList.forEach((elem, index) => {
         elem.addEventListener('click', e => {
             translateXCounter = -100 * (index + 1);
@@ -132,10 +140,10 @@ if (postSliderList && postSliderArrowLeft && postSliderArrowRight) {
     
         slider(postSliderImg);
     });
+
+    slider(postSliderImg);
+
 }
-
-slider(postSliderImg);
-
 
 
 
@@ -154,18 +162,17 @@ if (modal) {
     modalClose.addEventListener('click', e => {
         removeModal();
     })
-    
-    function activeAnimation() {
-        modal.style.top = '0';
-        modal.style.animation = 'blackout 1.5s forwards';
-    }
-    
-    function removeModal() {
-        modal.style.animation = 'blackout 1.5s forwards reverse';
-        modal.style.top = '-100%';
-    }
-    
-    activeAnimation();
+}
+
+function activeModal() {
+    modal.style.top = '0';
+    modal.style.animation = 'blackout 1.5s forwards';
+}
+
+function removeModal() {
+    modal.style.animation = '';
+    modal.style.background = 'rgba(0, 0, 0, 0)';
+    modal.style.top = '-100%';
 }
 
 
@@ -184,19 +191,19 @@ if (headerFixedActive && asideClose && aside) {
         }
     });
 
-    headerFixedActive.addEventListener('click', e => activeMenu())
+    headerFixedActive.addEventListener('click', e => activeMenu());
 
-    asideClose.addEventListener('click', e => removeMenu())
+    asideClose.addEventListener('click', e => removeMenu());
+}
 
-    function activeMenu() {
-        aside.style.transform = 'translateX(0)';
-        aside.style.animation = 'blackout 1s forwards';
-    }
+function activeMenu() {
+    aside.style.transform = 'translateX(0)';
+    aside.style.animation = 'blackout 1s forwards';
+}
 
-    function removeMenu() {
-        aside.style.transform = 'translateX(-100%)';
-        aside.style.animation = '';
-    }
+function removeMenu() {
+    aside.style.transform = 'translateX(-100%)';
+    aside.style.animation = '';
 }
 
 
@@ -225,9 +232,20 @@ commentAnswer.forEach(elem => {
         });
     
         commentsButtonReplay.addEventListener('click', () => {
-            commentsUserAnswer.style.display = 'none';
+            activeModal();
         });
 
         removeDisabledButton(commentsTextarea, commentsButtonReplay);
     })
 })
+
+const video = document.querySelector('.post__video-elem');
+const videoStart = document.querySelector('.video__start');
+
+if (videoStart) {
+    videoStart.addEventListener('click', e => {
+        videoStart.style.display = 'none';
+        video.play();
+        video.controls = true;
+    })
+}

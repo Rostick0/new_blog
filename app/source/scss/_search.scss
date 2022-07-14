@@ -47,7 +47,8 @@
 
         .search__tags {
             display: flex;
-            column-gap: 12px;
+            flex-wrap: wrap;
+            grid-gap: 12px;
 
             .search__tag {
                 .search__tag_link {
