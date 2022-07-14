@@ -202,5 +202,16 @@
 }
 
 .margin-bottom-fixed {
+    display: none;
+
     height: 70px;
+}
+
+
+
+
+@media (max-width: 480px) {
+    .margin-bottom-fixed {
+        display: block;
+    }
 }

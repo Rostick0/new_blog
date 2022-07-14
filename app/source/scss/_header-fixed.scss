@@ -48,6 +48,12 @@
     }
 }
 
+.header-margin {
+    display: none;
+
+    height: 60px;
+}
+
 @media (max-width: 480px) {
     .header-fixed {
         display: flex;

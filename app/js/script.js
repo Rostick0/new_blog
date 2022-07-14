@@ -84,6 +84,14 @@ const postSliderImg = document.querySelectorAll('.post__slider_img');
 const postSliderLists = document.querySelector('.post__slider_lists');
 let translateXCounter = -100;
 
+// render switch items
+
+for (let i = 0; i < postSliderImg.length; i++) {
+    postSliderLists.insertAdjacentHTML('afterbegin', '<li class="post__slider_list"></li>');
+}
+
+const postSliderList = document.querySelectorAll('.post__slider_list');
+
 function slider(slides) {
     let counterSlide = translateXCounter
 
@@ -105,13 +113,6 @@ function slider(slides) {
 }
 
 if (postSliderList && postSliderArrowLeft && postSliderArrowRight) {
-    // render switch items
-
-    for (let i = 0; i < postSliderImg.length; i++) {
-        postSliderLists.insertAdjacentHTML('afterbegin', '<li class="post__slider_list"></li>');
-    }
-
-    const postSliderList = document.querySelectorAll('.post__slider_list');
 
     postSliderList.forEach((elem, index) => {
         elem.addEventListener('click', e => {

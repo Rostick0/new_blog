@@ -203,16 +203,6 @@
 
                 width: 100%;
 
-                // &::before {
-                //     content: url("../img/start_video.svg");
-                //     left: 50%;
-                //     top: 50%;
-
-                //     position: absolute;
-
-                //     z-index: 100;
-                // }
-
                 .video__start {
                     background: rgba(0, 0, 0, 0.5);
 
@@ -255,8 +245,6 @@
                 margin-top: 12px;
             }
         }
-
-
 
         .post__slider {
             .post__slider__switches {
@@ -343,7 +331,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .post {
         .post__main-image {
 
@@ -355,6 +343,7 @@
                 width: 100%;
             }
         }
+
     }
 }
 
@@ -533,6 +522,12 @@
     
             .post__image {
                 .post__image_alignment {
+                    padding-top: 200px;
+                }
+            }
+
+            .post__video {
+                .post__video_alignment {
                     padding-top: 200px;
                 }
             }
