@@ -50,11 +50,9 @@
 
 .header-margin {
     display: none;
-
-    height: 60px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
     .header-fixed {
         display: flex;
     }

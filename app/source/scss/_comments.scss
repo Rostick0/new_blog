@@ -167,7 +167,13 @@
                     .comment-user__reply {
                         color: #898989;
 
+                        transition: 200ms;
+
                         font-size: 14px;
+
+                        &:hover {
+                            color: #000000;
+                        }
                     }
 
                     .comments-user__answer {
@@ -200,7 +206,7 @@
 
                         .commtents__buttons {
                             display: flex;
-                            align-items: center;
+                            align-items: stretch;
                             column-gap: 16px;
 
                             position: absolute;
@@ -210,6 +216,12 @@
 
                             .comments__button_cancel {
                                 color: #898989;
+
+                                transition: 200ms;
+
+                                &:hover {
+                                    color: #000000;
+                                }
                             }
 
                             .comments__button_replay {
