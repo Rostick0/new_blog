@@ -466,6 +466,8 @@ textarea {
     row-gap: 4.5px;
     margin: 16px;
     margin-top: 12px;
+    width: 36px;
+    min-height: 36px;
   }
   .aside .aside__inner .aside__close span {
     margin-left: -6px;
