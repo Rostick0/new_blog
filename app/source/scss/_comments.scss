@@ -24,6 +24,8 @@
                 row-gap: 8px;
 
                 .comment__top_name {
+                    color: #000000;
+
                     font-weight: 500;
 
                     line-height: 20px;
@@ -143,6 +145,8 @@
                         justify-content: space-between;
 
                         .comment-user__name {
+                            color: #000000;
+
                             font-weight: 500;
 
                             line-height: 20px;
@@ -158,6 +162,8 @@
                     }
 
                     .comment-user__message {
+                        color: #000000;
+
                         line-height: 150%;
 
                         margin-top: 4px;
@@ -262,12 +268,6 @@
                     flex-direction: column;
                     row-gap: 8px;
     
-                    .comment__top_name {
-                        font-weight: 500;
-    
-                        line-height: 20px;
-                    }
-    
                     .comment__top_answer {
                         font-size: 18px;
     
@@ -346,13 +346,6 @@
     
                                 line-height: 20px;
                             }
-                        }
-    
-                        .comment-user__message {
-                            line-height: 150%;
-    
-                            margin-top: 4px;
-                            margin-bottom: 6px;
                         }
     
                         .comment-user__reply {

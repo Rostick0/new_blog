@@ -173,7 +173,7 @@ function activeModal() {
 function removeModal() {
     modal.style.animation = '';
     modal.style.background = 'rgba(0, 0, 0, 0)';
-    modal.style.top = '-100%';
+    modal.style.top = '-150%';
 }
 
 

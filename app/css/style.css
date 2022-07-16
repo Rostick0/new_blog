@@ -263,7 +263,7 @@ textarea {
   height: 70px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   .margin-bottom-fixed {
     display: block;
   }
@@ -1243,6 +1243,7 @@ textarea {
     width: 100%;
     left: 0;
     bottom: 0;
+    z-index: 1000;
   }
   .aside-short .aside-short__inner .aside-short__item {
     border-radius: 0;
@@ -1332,6 +1333,7 @@ textarea {
   row-gap: 8px;
 }
 .comments .comments__top .comments__top_content .comment__top_text .comment__top_name {
+  color: #000000;
   font-weight: 500;
   line-height: 20px;
 }
@@ -1443,6 +1445,7 @@ textarea {
   justify-content: space-between;
 }
 .comments .comments__bottom .comments__aswer .comment__answer .comment-user__text .comment-user__text_short-info .comment-user__name {
+  color: #000000;
   font-weight: 500;
   line-height: 20px;
 }
@@ -1452,6 +1455,7 @@ textarea {
   line-height: 20px;
 }
 .comments .comments__bottom .comments__aswer .comment__answer .comment-user__text .comment-user__message {
+  color: #000000;
   line-height: 150%;
   margin-top: 4px;
   margin-bottom: 6px;
@@ -1543,10 +1547,6 @@ textarea {
     flex-direction: column;
     row-gap: 8px;
   }
-  .comments .comments__top .comments__top_content .comment__top_text .comment__top_name {
-    font-weight: 500;
-    line-height: 20px;
-  }
   .comments .comments__top .comments__top_content .comment__top_text .comment__top_answer {
     font-size: 18px;
     line-height: 150%;
@@ -1629,11 +1629,6 @@ textarea {
     color: #898989;
     font-size: 12px;
     line-height: 20px;
-  }
-  .comments .comments__bottom .comments__aswer .comment__answer .comment-user__text .comment-user__message {
-    line-height: 150%;
-    margin-top: 4px;
-    margin-bottom: 6px;
   }
   .comments .comments__bottom .comments__aswer .comment__answer .comment-user__text .comment-user__reply {
     color: #898989;
@@ -1728,7 +1723,7 @@ textarea {
   -ms-flex-pack: center;
   justify-content: center;
   position: fixed;
-  top: -100%;
+  top: -150%;
   left: 0;
   -webkit-transition: 1000ms;
   transition: 1000ms;
