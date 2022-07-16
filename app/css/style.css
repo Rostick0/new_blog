@@ -2025,7 +2025,7 @@ textarea {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 50%;
   width: 100%;
 }
 
