@@ -2033,6 +2033,9 @@ textarea {
   .page {
     display: block;
   }
+  .page .content {
+    max-width: 100%;
+  }
 }
 @media (max-width: 768px) {
   .container {
