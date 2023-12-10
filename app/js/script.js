@@ -58,18 +58,7 @@ function removeDisabledButton(input, button) {
 
 const bannerInput = document.querySelector('.banner__input');
 const bannerButton = document.querySelector('.banner__button');
-const commentsTopTextarea = document.querySelector('.comments__top_textarea');
-const commentsTopButton = document.querySelector('.comments__top_button');
 
-if (commentsTopButton) {
-    commentsTopButton.addEventListener('click', e => {
-        e.preventDefault();
-    
-        activeModal();
-    });
-}
-
-removeDisabledButton(commentsTopTextarea, commentsTopButton);
 removeDisabledButton(bannerInput, bannerButton);
 
 
@@ -181,18 +170,18 @@ function removeModal() {
 
 // burger-menu
 
-const headerFixedActive = document.querySelector('.header-fixed__active');
+const headerBurgerMobile = document.querySelector('.header__burger-mobile');
 const asideClose = document.querySelector('.aside__close');
 const aside = document.querySelector('.aside');
 
-if (headerFixedActive && asideClose && aside) {
+if (headerBurgerMobile && asideClose && aside) {
     aside.addEventListener('click', e => {
         if (e.target.classList[0] == 'aside') {
             removeMenu();
         }
     });
 
-    headerFixedActive.addEventListener('click', e => activeMenu());
+    headerBurgerMobile.addEventListener('click', e => activeMenu());
 
     asideClose.addEventListener('click', e => removeMenu());
 }
@@ -203,42 +192,10 @@ function activeMenu() {
 }
 
 function removeMenu() {
-    aside.style.transform = 'translateX(-100%)';
+    aside.style.transform = 'translateX(100%)';
     aside.style.animation = '';
 }
 
-
-
-
-// commments
-
-const commentAnswer = document.querySelectorAll('.comment__answer');
-
-commentAnswer.forEach(elem => {
-    const buttonReply = elem.querySelector('.comment-user__reply');
-    const commentsTextarea = elem.querySelector('.comments__textarea');
-    const commentsUserAnswer = elem.querySelector('.comments-user__answer');
-    const commentsButtonCancel = elem.querySelector('.comments__button_cancel');
-    const commentsButtonReplay = elem.querySelector('.comments__button_replay');
-
-    if (!elem) {
-        return;
-    }
-
-    buttonReply.addEventListener('click', () => {
-        commentsUserAnswer.style.display = 'block';
-
-        commentsButtonCancel.addEventListener('click', () => {
-            commentsUserAnswer.style.display = 'none';
-        });
-    
-        commentsButtonReplay.addEventListener('click', () => {
-            activeModal();
-        });
-
-        removeDisabledButton(commentsTextarea, commentsButtonReplay);
-    })
-})
 
 const video = document.querySelector('.post__video-elem');
 const videoStart = document.querySelector('.video__start');

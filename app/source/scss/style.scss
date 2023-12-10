@@ -2,34 +2,23 @@
 @import './fonts';
 @import './UI';
 @import './aside';
-@import './recommendations';
 @import './articles';
 @import './search';
 @import './post';
-@import './aside-short';
-@import './comments';
 @import './banner';
 @import './modal';
 @import './animations';
-@import './header-fixed';
 @import './banner-subscribed';
+@import './header';
 
 .wrapper {
     background: #ECECF0;
+    color: #000000;
 
     font-family: 'Rubik';
 
-    color: #000000;
-
     min-height: 100vh;
 }
-
-
-
-.container {
-    padding: 40px;
-}
-
 
 
 
@@ -40,9 +29,9 @@
     .content {
         flex: 1 1 auto;
 
-        margin: 0 auto;
+        margin-left: 20px;
 
-        max-width: 50%;
+        max-width: 900px;
         width: 100%;
     }
 }
@@ -55,13 +44,9 @@
         display: block;
 
         .content {
+            margin-left: 0;
+
             max-width: 100%;
         }
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding: 20px;
     }
 }

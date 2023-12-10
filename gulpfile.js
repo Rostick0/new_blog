@@ -23,7 +23,6 @@ function scss() {
             .pipe(autoprefixer({
                 cascade: false
             }))
-            .pipe(dest('app/css'))
             .pipe(csso())
             .pipe(dest('dist/css'))
 }

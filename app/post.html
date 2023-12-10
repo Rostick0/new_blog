@@ -13,8 +13,9 @@
 })
     <div class="wrapper">
         <div class="container">
-            <div class="page search-page">
-                @@include('components/aside-short.html')
+        @@include('components/header.html')
+        <div class="page search-page">
+                @@include('components/aside.html')
                 
                 <div class="content search-page__content">
                     <div class="post style-block">
@@ -179,11 +180,8 @@
                     </div>
 
                     @@include('components/banner.html')
-
-                    @@include('components/comments.html')
                 </div>
 
-                @@include('components/recommendations.html')
 
                 @@include('components/modal.html')
                 <div class="margin-bottom-fixed"></div>
