@@ -10,6 +10,7 @@
 @import './animations';
 @import './banner-subscribed';
 @import './header';
+@import './popular-tag';
 
 .wrapper {
     background: #ECECF0;
@@ -29,10 +30,15 @@
     .content {
         flex: 1 1 auto;
 
-        margin-left: 20px;
+        margin: 0 auto;
 
         max-width: 900px;
         width: 100%;
+    }
+
+    &-section-title {
+        font-size: 28px;
+        margin-bottom: 16px;
     }
 }
 
@@ -47,6 +53,14 @@
             margin-left: 0;
 
             max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .page {
+        &-section-title {
+            font-size: 24px;
         }
     }
 }

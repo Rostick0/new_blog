@@ -1,0 +1,38 @@
+.popular-tag {
+    align-self: flex-start;
+    width: 100%;
+    max-width: 325px;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+
+        padding: 20px;
+        padding-bottom: 16px;
+    }
+
+    &__list {
+        border-top: 1px solid rgba(235, 236, 240, 1);
+
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 12px;
+
+        padding: 16px 20px 24px;
+    }
+
+    &__link {
+        background-color: #F8F9FC;
+        color: rgba(79, 79, 79, 1);
+
+        border: 1px solid rgba(213, 217, 235, 1);
+        border-radius: 8px;
+
+        display: inline-block;
+        padding: 6px 8px;
+    }
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
+}

@@ -4,7 +4,7 @@
     row-gap: 20px;
 
     .article {
-        .article__image {
+        &__image {
             margin-bottom: -11px;
 
             .article__img {
@@ -14,7 +14,7 @@
             }
         }
     
-        .article__info {
+        &__info {
             padding: 28px;
 
             .article__text {
@@ -65,7 +65,7 @@
         row-gap: 12px;
     
         .article {
-            .article__image {
+            &__image {
                 margin-bottom: -11px;
     
                 .article__img {
@@ -75,7 +75,7 @@
                 }
             }
         
-            .article__info {
+            &__info {
                 padding: 16px;
     
                 .article__text {
