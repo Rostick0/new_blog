@@ -1,159 +1,223 @@
 <html prefix="og: http://ogp.me/ns#">
-    <head>
-        <meta property="og:title" content="The Art of Product Management. The Importance of Soft Skills of your employees."/>
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="http://cp22083.tmweb.ru/" />
-        <meta property="og:image" content="http://cp22083.tmweb.ru/img/img-blog.png"/>
-    </head>
+
+<head>
+    <meta property="og:title"
+        content="The Art of Product Management. The Importance of Soft Skills of your employees." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://cp22083.tmweb.ru/" />
+    <meta property="og:image" content="http://cp22083.tmweb.ru/img/img-blog.png" />
+</head>
+
 </html>
 
 @@include('layout/head.html', {
-    "lang": "en",
-    "title": "post"
+"lang": "en",
+"title": "post"
 })
-    <div class="wrapper">
-        @@include('components/header.html')
-        <div class="container">
-            <div class="page search-page">
-                @@include('components/aside.html')
-    
-                <div class="content search-page__content">
-                    <div class="post style-block">
-                        <div class="post__main-image">
-                            <div class="post__main-image_alignment">
-                                <img class="post__main-img" src="img/img-blog.png" alt="">
+<div class="wrapper">
+    @@include('components/header.html')
+    <div class="container">
+        <div class="page search-page">
+            @@include('components/aside.html')
+
+            <div class="content search-page__content">
+                <div class="post style-block">
+                    <div class="post__main-image">
+                        <div class="post__main-image_alignment">
+                            <img class="post__main-img" src="img/img-blog.png" alt="">
+                        </div>
+                    </div>
+                    <div class="post__content">
+                        <div class="post-breadcrumbs">
+                            <a class="post-breadcrumbs__item link" href="">
+                                <span>Main</span>
+                            </a>
+                            <a class="post-breadcrumbs__item link" href="">
+                                <span>Media</span>
+                            </a>
+                            <a class="post-breadcrumbs__item link" href="">
+                                <span>iOS</span>
+                            </a>
+                            <span class="post-breadcrumbs__item">Full set of iOS 16 interface elements for working in
+                                Figma</span>
+                        </div>
+                        <div class="post__short-info publication__shor-info">
+                            <div class="publication__user post__user">
+                                <a class="publication__user_href post__user_href" href="">
+                                    <img class="publication__user_img post__user_img" src="img/user_image.png" alt="">
+                                    <div class="publication__user_text post__user_text">
+                                        <div class="publication__user_name post__user_name">Xperience</div>
+                                        <div class="publication__user_post post__user_post">CTO, Product Global LTD
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="post__public">
+                                <div class="post__public_top">
+                                    <div class="post__fact-source">This article is based on technical facts and recognized sources</div>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.1163 6.42625C13.8806 6.18 13.6369 5.92625 13.545 5.70312C13.46 5.49875 13.455 5.16 13.45 4.83187C13.4406 4.22187 13.4306 3.53062 12.95 3.05C12.4694 2.56937 11.7781 2.55937 11.1681 2.55C10.84 2.545 10.5013 2.54 10.2969 2.455C10.0744 2.36312 9.82 2.11937 9.57375 1.88375C9.1425 1.46937 8.6525 1 8 1C7.3475 1 6.85812 1.46937 6.42625 1.88375C6.18 2.11937 5.92625 2.36312 5.70312 2.455C5.5 2.54 5.16 2.545 4.83187 2.55C4.22187 2.55937 3.53062 2.56937 3.05 3.05C2.56937 3.53062 2.5625 4.22187 2.55 4.83187C2.545 5.16 2.54 5.49875 2.455 5.70312C2.36312 5.92562 2.11937 6.18 1.88375 6.42625C1.46937 6.8575 1 7.3475 1 8C1 8.6525 1.46937 9.14187 1.88375 9.57375C2.11937 9.82 2.36312 10.0737 2.455 10.2969C2.54 10.5013 2.545 10.84 2.55 11.1681C2.55937 11.7781 2.56937 12.4694 3.05 12.95C3.53062 13.4306 4.22187 13.4406 4.83187 13.45C5.16 13.455 5.49875 13.46 5.70312 13.545C5.92562 13.6369 6.18 13.8806 6.42625 14.1163C6.8575 14.5306 7.3475 15 8 15C8.6525 15 9.14187 14.5306 9.57375 14.1163C9.82 13.8806 10.0737 13.6369 10.2969 13.545C10.5013 13.46 10.84 13.455 11.1681 13.45C11.7781 13.4406 12.4694 13.4306 12.95 12.95C13.4306 12.4694 13.4406 11.7781 13.45 11.1681C13.455 10.84 13.46 10.5013 13.545 10.2969C13.6369 10.0744 13.8806 9.82 14.1163 9.57375C14.5306 9.1425 15 8.6525 15 8C15 7.3475 14.5306 6.85812 14.1163 6.42625ZM10.8538 6.85375L7.35375 10.3538C7.30731 10.4002 7.25217 10.4371 7.19147 10.4623C7.13077 10.4874 7.06571 10.5004 7 10.5004C6.93429 10.5004 6.86923 10.4874 6.80853 10.4623C6.74783 10.4371 6.69269 10.4002 6.64625 10.3538L5.14625 8.85375C5.05243 8.75993 4.99972 8.63268 4.99972 8.5C4.99972 8.36732 5.05243 8.24007 5.14625 8.14625C5.24007 8.05243 5.36732 7.99972 5.5 7.99972C5.63268 7.99972 5.75993 8.05243 5.85375 8.14625L7 9.29313L10.1462 6.14625C10.1927 6.09979 10.2479 6.06294 10.3086 6.0378C10.3692 6.01266 10.4343 5.99972 10.5 5.99972C10.5657 5.99972 10.6308 6.01266 10.6914 6.0378C10.7521 6.06294 10.8073 6.09979 10.8538 6.14625C10.9002 6.1927 10.9371 6.24786 10.9622 6.30855C10.9873 6.36925 11.0003 6.4343 11.0003 6.5C11.0003 6.5657 10.9873 6.63075 10.9622 6.69145C10.9371 6.75214 10.9002 6.8073 10.8538 6.85375Z"
+                                            fill="#219653" />
+                                    </svg>
+                                    <span>Evidence based</span>
+                                </div>
+                                <div class="post__date publication__date">
+                                    <div class="post__date_update publication__date_update">Modified January 28, 2024
+                                    </div>
+                                    <div class="post__date_created publication__date_created">Published July 02, 2022
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="post__content">
-                            <div class="post__short-info publication__shor-info">
-                                <div class="publication__user post__user">
-                                    <a class="publication__user_href post__user_href" href="">
-                                        <img class="publication__user_img post__user_img" src="img/user_image.png" alt="">
-                                        <div class="publication__user_name post__user_name">
-                                            Xperience
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="publication__date">
-                                    Published July 02, 2022
-                                </div>
+                        <div class="post__titles">
+                            <h2 class="post__title">
+                                The Art of Product Management. The Importance of Soft Skills of your employees.
+                            </h2>
+                            <div class="post__title_subtitle">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                             </div>
-                            <div class="post__titles">
-                                <h2 class="post__title">
-                                    The Art of Product Management. The Importance of Soft Skills of your employees.
-                                </h2>
-                                <div class="post__title_subtitle">
-                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                                </div>
-                            </div>
-                            <ul class="post__tags tags">
-                                <li class="post__tag tag">
-                                    <a class="post__tag_link tag__link" href="">
-                                        #figma
-                                    </a>
-                                </li>
-                                <li class="post__tag tag">
-                                    <a class="post__tag_link tag__link" href="">
-                                        #ui
-                                    </a>
-                                </li>
-                                <li class="post__tag tag">
-                                    <a class="post__tag_link tag__link" href="">
-                                        #mobile
-                                    </a>
-                                </li>
-                                <li class="post__tag tag">
-                                    <a class="post__tag_link tag__link" href="">
-                                        #ios
-                                    </a>
-                                </li>
-                                <li class="post__tag tag">
-                                    <a class="post__tag_link tag__link" href="">
-                                        #apple 
-                                    </a>
-                                </li>
-                            </ul>
+                        </div>
+                        <ul class="post__tags tags">
+                            <li class="post__tag tag">
+                                <a class="post__tag_link tag__link" href="">
+                                    #figma
+                                </a>
+                            </li>
+                            <li class="post__tag tag">
+                                <a class="post__tag_link tag__link" href="">
+                                    #ui
+                                </a>
+                            </li>
+                            <li class="post__tag tag">
+                                <a class="post__tag_link tag__link" href="">
+                                    #mobile
+                                </a>
+                            </li>
+                            <li class="post__tag tag">
+                                <a class="post__tag_link tag__link" href="">
+                                    #ios
+                                </a>
+                            </li>
+                            <li class="post__tag tag">
+                                <a class="post__tag_link tag__link" href="">
+                                    #apple
+                                </a>
+                            </li>
+                        </ul>
+                        <h3 class="post__h3">
+                            Vis ea nisl ceteros adversarium, te pro labore reprimique.
+                        </h3>
+                        <p class="post__p">
+                            Sit at audiam perpetua, et saepe corpora praesent cum. Dicit similique referrentur eam eu,
+                            ne omnes ancillae has. Quo labore quaestio ea, te lorem paulo signiferumque vis. Erant
+                            nostrum salutandi pri an.
+                        </p>
+                        <div class="post__note">
+                            <p class="post__italc-grey">
+                                <q>
+                                    Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option
+                                    scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his.
+                                    Per aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse
+                                </q>
+                                (Name).
+                            </p>
+                        </div>
+                        <p class="post__p">
+                            Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option
+                            scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per
+                            aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu
+                            ius.
+                        </p>
+                        <p class="post__p">
+                            Nulla aliquam per te, vis omnes lobortis ocurreret an. Ex per omnis feugait, vim eu
+                            voluptaria elaboraret. Ea ipsum constituto instructior est, cibo iriure facilisis ut per. Et
+                            posse equidem aliquando eos, nobis lobortis definitionem eos an.
+                        </p>
+                        <ul class="list__ul post__list_ul">
+                            <li class="list__item">
+                                Lorem ipsum dolor sit amet, no omnes mollis per
+                            </li>
+                            <li class="list__item">
+                                Lorem ipsum dolor sit amet, no omnes mollis per
+                            </li>
+                            <li class="list__item">
+                                Lorem ipsum dolor sit amet, no omnes mollis per
+                            </li>
+                            <li class="list__item">
+                                Lorem ipsum dolor sit amet, no omnes mollis per
+                            </li>
+                            <li class="list__item">
+                                Lorem ipsum dolor sit amet, no omnes mollis per
+                            </li>
+                        </ul>
+                        <p class="post__p">
+                            Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option
+                            scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per
+                            aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu
+                            ius.
+                        </p>
+                        <p class="post__p">
+                            Nulla aliquam per te, vis omnes lobortis ocurreret an. Ex per omnis feugait, vim eu
+                            voluptaria elaboraret. Ea ipsum constituto instructior est, cibo iriure facilisis ut per. Et
+                            posse equidem aliquando eos, nobis lobortis definitionem eos an.
+                        </p>
+                        <div class="post__p-bg">
+                            <p class="post__p">
+                                Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option
+                                scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per
+                                aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit
+                                nostro eu ius.
+                            </p>
+                        </div>
+                        <p class="post__p">
+                            Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option
+                            scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per
+                            aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu
+                            ius.
+                        </p>
+                        <p class="post__p">
+                            Nulla aliquam per te, vis omnes lobortis ocurreret an. Ex per omnis feugait, vim eu
+                            voluptaria elaboraret. Ea ipsum constituto instructior est, cibo iriure facilisis ut per. Et
+                            posse equidem aliquando eos, nobis lobortis definitionem eos an.
+                        </p>
+                        <div class="post__p-bg">
                             <h3 class="post__h3">
                                 Vis ea nisl ceteros adversarium, te pro labore reprimique.
                             </h3>
                             <p class="post__p">
-                                Sit at audiam perpetua, et saepe corpora praesent cum. Dicit similique referrentur eam eu, ne omnes ancillae has. Quo labore quaestio ea, te lorem paulo signiferumque vis. Erant nostrum salutandi pri an.
-                            </p>
-                            <div class="post__note">
-                                <p class="post__italc-grey">
-                                    <q>
-                                        Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse
-                                    </q>
-                                    (Name).
-                                </p>
-                            </div>
-                            <p class="post__p">
-                                Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu ius.
-                            </p>
-                            <p class="post__p">
-                                Nulla aliquam per te, vis omnes lobortis ocurreret an. Ex per omnis feugait, vim eu voluptaria elaboraret. Ea ipsum constituto instructior est, cibo iriure facilisis ut per. Et posse equidem aliquando eos, nobis lobortis definitionem eos an.
-                            </p>
-                            <ul class="list__ul post__list_ul">
-                                <li class="list__item">
-                                    Lorem ipsum dolor sit amet, no omnes mollis per
-                                </li>
-                                <li class="list__item">
-                                    Lorem ipsum dolor sit amet, no omnes mollis per
-                                </li>
-                                <li class="list__item">
-                                    Lorem ipsum dolor sit amet, no omnes mollis per
-                                </li>
-                                <li class="list__item">
-                                    Lorem ipsum dolor sit amet, no omnes mollis per
-                                </li>
-                                <li class="list__item">
-                                    Lorem ipsum dolor sit amet, no omnes mollis per
-                                </li>
-                            </ul>
-                            <p class="post__p">
-                                Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu ius.
-                            </p>
-                            <p class="post__p">
-                                Nulla aliquam per te, vis omnes lobortis ocurreret an. Ex per omnis feugait, vim eu voluptaria elaboraret. Ea ipsum constituto instructior est, cibo iriure facilisis ut per. Et posse equidem aliquando eos, nobis lobortis definitionem eos an.
-                            </p>
-                            <div class="post__p-bg">
-                                <p class="post__p">
-                                    Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu ius.
-                                </p>
-                            </div>
-                            <p class="post__p">
-                                Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu ius.
-                            </p>
-                            <p class="post__p">
-                                Nulla aliquam per te, vis omnes lobortis ocurreret an. Ex per omnis feugait, vim eu voluptaria elaboraret. Ea ipsum constituto instructior est, cibo iriure facilisis ut per. Et posse equidem aliquando eos, nobis lobortis definitionem eos an.
-                            </p>
-                            <div class="post__p-bg">
-                                <h3 class="post__h3">
-                                    Vis ea nisl ceteros adversarium, te pro labore reprimique.
-                                </h3>
-                                <p class="post__p">
-                                    Sit at audiam perpetua, et saepe corpora praesent cum. Dicit similique referrentur eam eu, ne omnes ancillae has. Quo labore quaestio ea, te lorem paulo signiferumque vis. Erant nostrum salutandi pri an.
-                                </p>
-                            </div>
-                            <p class="post__p">
-                                Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu ius.
-                            </p>
-                            <p class="post__p">
-                                Nulla aliquam per te, vis omnes lobortis ocurreret an. Ex per omnis feugait, vim eu voluptaria elaboraret. Ea ipsum constituto instructior est, cibo iriure facilisis ut per. Et posse equidem aliquando eos, nobis lobortis definitionem eos an.
+                                Sit at audiam perpetua, et saepe corpora praesent cum. Dicit similique referrentur eam
+                                eu, ne omnes ancillae has. Quo labore quaestio ea, te lorem paulo signiferumque vis.
+                                Erant nostrum salutandi pri an.
                             </p>
                         </div>
+                        <p class="post__p">
+                            Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option
+                            scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per
+                            aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu
+                            ius.
+                        </p>
+                        <p class="post__p">
+                            Nulla aliquam per te, vis omnes lobortis ocurreret an. Ex per omnis feugait, vim eu
+                            voluptaria elaboraret. Ea ipsum constituto instructior est, cibo iriure facilisis ut per. Et
+                            posse equidem aliquando eos, nobis lobortis definitionem eos an.
+                        </p>
                     </div>
-
-                    @@include('components/banner-subscribed.html')
                 </div>
 
-                @@include('components/popular-tag.html')
+                @@include('components/banner-subscribed.html')
+            </div>
 
-                @@include('components/modal.html')
+            @@include('components/popular-tag.html')
 
-                <div class="margin-bottom-fixed"></div>
-            </div> 
+            @@include('components/modal.html')
+
+            <div class="margin-bottom-fixed"></div>
         </div>
     </div>
+</div>
 
 @@include('layout/footer.html')

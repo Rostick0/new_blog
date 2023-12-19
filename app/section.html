@@ -1,26 +1,27 @@
 @@include('layout/head.html', {
-    "lang": "en",
-    "title": "blog"
+"lang": "en",
+"title": "blog"
 })
-    <div class="wrapper">
-        @@include('components/header.html')
-        <div class="container">
-            <div class="page home-page">
-                
-                @@include('components/aside.html')
-    
-                <div class="content">
-                    <h2 class="page-section-title">Section name</h2>
-                    @@include('components/articles.html')
+<div class="wrapper">
+    @@include('components/header.html')
+    <div class="container">
+        <div class="page home-page">
 
-                    <div class="more">
+            @@include('components/aside.html')
+
+            <div class="content">
+                <h2 class="page-section-title">Section name</h2>
+                @@include('components/articles.html')
+
+                <!-- <div class="more">
                         <div class="btn more__btn">Show more</div>
-                    </div>
-                </div>
+                    </div> -->
+                @@include('components/pagination.html')
+            </div>
 
-                @@include('components/popular-tag.html')
-            </div> 
+            @@include('components/popular-tag.html')
         </div>
     </div>
+</div>
 
 @@include('layout/footer.html')

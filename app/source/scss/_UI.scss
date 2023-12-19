@@ -71,7 +71,7 @@
     .tag {
         margin-left: -10px;
 
-        .tag__link {
+        &__link {
             border-radius: 8px;
 
             display: inline-block;
@@ -98,38 +98,51 @@
     align-items: center;
     justify-content: space-between;
 
-    margin-top: 31px;
+    padding-top: 32px;
 
     .publication__user {
 
-        .publication__user_href {
+        &_href {
             display: flex;
             align-items: center;
             column-gap: 8px;
+        }
 
-            .publication__user_img {
-                border-radius: 50%;
+        &_img {
+            border-radius: 50%;
 
-                width: 32px;
-                height: 32px;
-            }
+            width: 32px;
+            height: 32px;
+        }
 
-            .publication__user_name {
-                color: #898989;
+        &_name {
+            color: #898989;
 
-                line-height: 150%;
+            line-height: 150%;
 
-                font-size: 14px;
-            }
+            font-size: 14px;
+        }
+
+        &_post {
+            color: rgba(136, 146, 160, 1);
+
+            font-size: 12px;
+            line-height: 150%;
         }
     }
 
     .publication__date {
         color: #898989;
 
+        display: flex;
+        grid-gap: 6px;
+        
         font-size: 12px;
-
         line-height: 150%;
+
+        &_created {
+            color: #000;
+        }
     }
 }
 
@@ -195,7 +208,7 @@
 .slider {
     overflow-x: hidden;
 
-    .slider__inner {
+    &__inner {
         .slider__item {
             transition: 200ms;
         }
@@ -232,6 +245,69 @@
     }
 }
 
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 40px;
+
+    &__arrow {
+        color: rgba(71, 84, 103, 1);
+
+        display: flex;
+        align-items: center;
+        column-gap: 6px;
+
+        font-size: 14px;
+        font-weight: 600;
+
+        transition: .2s;
+     
+        &:hover {
+            color: #000;
+
+            .stroke {
+                stroke: #000;
+            }
+        }
+
+        .stroke {
+            transition: .2s;
+        }
+    }
+
+    &__list {
+        display: flex;
+        column-gap: 2px;
+    }
+
+    &__item {
+        &>* {
+            border-radius: 8px;
+          
+            color: rgba(71, 84, 103, 1);
+
+            display: inline-block;
+
+            text-align: center;
+            line-height: 125%;
+
+            padding: 10px;
+
+            transition: .2s;
+          
+            min-width: 40px;
+        }
+    }
+
+    &__link {
+        &.active {
+            background-color: #fff;
+            color: rgba(24, 34, 48, 1);
+        }
+    }
+}
 
 
 

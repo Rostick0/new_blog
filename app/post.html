@@ -1,193 +1,333 @@
 <html prefix="og: http://ogp.me/ns#">
-    <head>
-        <meta property="og:title" content="Full set of iOS 16 interface elements for working in Figma"/>
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="http://cp22083.tmweb.ru/" />
-        <meta property="og:image" content="http://cp22083.tmweb.ru/img/img-home.png"/>
-    </head>
+
+<head>
+    <meta property="og:title" content="Full set of iOS 16 interface elements for working in Figma" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://cp22083.tmweb.ru/" />
+    <meta property="og:image" content="http://cp22083.tmweb.ru/img/img-home.png" />
+</head>
+
 </html>
 
 @@include('layout/head.html', {
-    "lang": "en",
-    "title": "post"
+"lang": "en",
+"title": "post"
 })
-    <div class="wrapper">
-        <div class="container">
-        @@include('components/header.html')
+<div class="wrapper">
+    @@include('components/header.html')
+    <div class="container">
         <div class="page search-page">
-                @@include('components/aside.html')
-                
-                <div class="content search-page__content">
-                    <div class="post style-block">
-                        <div class="post__main-image">
-                            <div class="post__main-image_alignment">
-                                <img class="post__main-img" src="img/img-home.png" alt="">
-                            </div>
+            @@include('components/aside.html')
+
+            <div class="content search-page__content">
+                <div class="post style-block">
+                    <div class="post__main-image">
+                        <div class="post__main-image_alignment">
+                            <img class="post__main-img" src="img/img-home.png" alt="">
                         </div>
-                        <div class="post__content">
-                            <div class="post__short-info publication__shor-info">
-                                <div class="publication__user post__user">
-                                    <a class="publication__user_href post__user_href" href="">
-                                        <img class="publication__user_img post__user_img" src="img/user_image.png" alt="">
-                                        <div class="publication__user_name post__user_name">
-                                            Xperience
+                    </div>
+                    <div class="post__content">
+                        <div class="post-breadcrumbs">
+                            <a class="post-breadcrumbs__item link" href="">
+                                <span>Main</span>
+                            </a>
+                            <a class="post-breadcrumbs__item link" href="">
+                                <span>Media</span>
+                            </a>
+                            <a class="post-breadcrumbs__item link" href="">
+                                <span>iOS</span>
+                            </a>
+                            <span class="post-breadcrumbs__item">Full set of iOS 16 interface elements for working in
+                                Figma</span>
+                        </div>
+                        <div class="post__short-info publication__shor-info">
+                            <div class="publication__user post__user">
+                                <a class="publication__user_href post__user_href" href="">
+                                    <img class="publication__user_img post__user_img" src="img/user_image.png" alt="">
+                                    <div class="publication__user_text post__user_text">
+                                        <div class="publication__user_name post__user_name">Xperience</div>
+                                        <div class="publication__user_post post__user_post">CTO, Product Global LTD
                                         </div>
-                                    </a>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="post__public">
+                                <div class="post__public_top">
+                                    <div class="post__fact-source">This article is based on technical facts and
+                                        recognized sources</div>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.1163 6.42625C13.8806 6.18 13.6369 5.92625 13.545 5.70312C13.46 5.49875 13.455 5.16 13.45 4.83187C13.4406 4.22187 13.4306 3.53062 12.95 3.05C12.4694 2.56937 11.7781 2.55937 11.1681 2.55C10.84 2.545 10.5013 2.54 10.2969 2.455C10.0744 2.36312 9.82 2.11937 9.57375 1.88375C9.1425 1.46937 8.6525 1 8 1C7.3475 1 6.85812 1.46937 6.42625 1.88375C6.18 2.11937 5.92625 2.36312 5.70312 2.455C5.5 2.54 5.16 2.545 4.83187 2.55C4.22187 2.55937 3.53062 2.56937 3.05 3.05C2.56937 3.53062 2.5625 4.22187 2.55 4.83187C2.545 5.16 2.54 5.49875 2.455 5.70312C2.36312 5.92562 2.11937 6.18 1.88375 6.42625C1.46937 6.8575 1 7.3475 1 8C1 8.6525 1.46937 9.14187 1.88375 9.57375C2.11937 9.82 2.36312 10.0737 2.455 10.2969C2.54 10.5013 2.545 10.84 2.55 11.1681C2.55937 11.7781 2.56937 12.4694 3.05 12.95C3.53062 13.4306 4.22187 13.4406 4.83187 13.45C5.16 13.455 5.49875 13.46 5.70312 13.545C5.92562 13.6369 6.18 13.8806 6.42625 14.1163C6.8575 14.5306 7.3475 15 8 15C8.6525 15 9.14187 14.5306 9.57375 14.1163C9.82 13.8806 10.0737 13.6369 10.2969 13.545C10.5013 13.46 10.84 13.455 11.1681 13.45C11.7781 13.4406 12.4694 13.4306 12.95 12.95C13.4306 12.4694 13.4406 11.7781 13.45 11.1681C13.455 10.84 13.46 10.5013 13.545 10.2969C13.6369 10.0744 13.8806 9.82 14.1163 9.57375C14.5306 9.1425 15 8.6525 15 8C15 7.3475 14.5306 6.85812 14.1163 6.42625ZM10.8538 6.85375L7.35375 10.3538C7.30731 10.4002 7.25217 10.4371 7.19147 10.4623C7.13077 10.4874 7.06571 10.5004 7 10.5004C6.93429 10.5004 6.86923 10.4874 6.80853 10.4623C6.74783 10.4371 6.69269 10.4002 6.64625 10.3538L5.14625 8.85375C5.05243 8.75993 4.99972 8.63268 4.99972 8.5C4.99972 8.36732 5.05243 8.24007 5.14625 8.14625C5.24007 8.05243 5.36732 7.99972 5.5 7.99972C5.63268 7.99972 5.75993 8.05243 5.85375 8.14625L7 9.29313L10.1462 6.14625C10.1927 6.09979 10.2479 6.06294 10.3086 6.0378C10.3692 6.01266 10.4343 5.99972 10.5 5.99972C10.5657 5.99972 10.6308 6.01266 10.6914 6.0378C10.7521 6.06294 10.8073 6.09979 10.8538 6.14625C10.9002 6.1927 10.9371 6.24786 10.9622 6.30855C10.9873 6.36925 11.0003 6.4343 11.0003 6.5C11.0003 6.5657 10.9873 6.63075 10.9622 6.69145C10.9371 6.75214 10.9002 6.8073 10.8538 6.85375Z"
+                                            fill="#219653" />
+                                    </svg>
+                                    <span>Evidence based</span>
                                 </div>
                                 <div class="post__date publication__date">
-                                    Published July 02, 2022
+                                    <div class="post__date_update publication__date_update">Modified January 28, 2024
+                                    </div>
+                                    <div class="post__date_created publication__date_created">Published July 02, 2022
+                                    </div>
                                 </div>
                             </div>
-                            <div class="post__titles">
-                                <h2 class="post__title">
-                                    Full set of iOS 16 interface elements for working in Figma
-                                </h2>
-                            </div>
-                            <ul class="post__tags tags">
-                                <li class="post__tag tag">
-                                    <a class="post__tag_link tag__link" href="">
-                                        #figma
+                        </div>
+                        <div class="post__titles">
+                            <h2 class="post__title">
+                                Full set of iOS 16 interface elements for working in Figma
+                            </h2>
+                        </div>
+                        <ul class="post__tags tags">
+                            <li class="post__tag tag">
+                                <a class="post__tag_link tag__link" href="">
+                                    #figma
+                                </a>
+                            </li>
+                            <li class="post__tag tag">
+                                <a class="post__tag_link tag__link" href="">
+                                    #ui
+                                </a>
+                            </li>
+                            <li class="post__tag tag">
+                                <a class="post__tag_link tag__link" href="">
+                                    #mobile
+                                </a>
+                            </li>
+                            <li class="post__tag tag">
+                                <a class="post__tag_link tag__link" href="">
+                                    #ios
+                                </a>
+                            </li>
+                            <li class="post__tag tag">
+                                <a class="post__tag_link tag__link" href="">
+                                    #apple
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="post-summary">
+                            <div class="post-summary__title">Article сontent:</div>
+                            <ul class="post-summary__list">
+                                <li class="post-summary__item">
+                                    <a class="post-summary__link" href="#general">
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.6922 11.6922L12.9422 15.4422C12.8548 15.5297 12.7434 15.5893 12.6221 15.6135C12.5008 15.6376 12.375 15.6252 12.2608 15.5779C12.1465 15.5305 12.0488 15.4504 11.9802 15.3475C11.9115 15.2446 11.8749 15.1237 11.875 15V11.875H5C4.83424 11.875 4.67527 11.8092 4.55806 11.6919C4.44085 11.5747 4.375 11.4158 4.375 11.25V3C4.375 2.83424 4.44085 2.67527 4.55806 2.55806C4.67527 2.44085 4.83424 2.375 5 2.375C5.16576 2.375 5.32473 2.44085 5.44194 2.55806C5.55915 2.67527 5.625 2.83424 5.625 3V10.625H11.875V7.5C11.8749 7.37632 11.9115 7.25538 11.9802 7.15251C12.0488 7.04964 12.1465 6.96946 12.2608 6.92211C12.375 6.87477 12.5008 6.86239 12.6221 6.88654C12.7434 6.9107 12.8548 6.9703 12.9422 7.05781L16.6922 10.8078C16.7503 10.8659 16.7964 10.9348 16.8279 11.0107C16.8593 11.0865 16.8755 11.1679 16.8755 11.25C16.8755 11.3321 16.8593 11.4135 16.8279 11.4893C16.7964 11.5652 16.7503 11.6341 16.6922 11.6922Z"
+                                                fill="#878C91" />
+                                        </svg>
+                                        <span>General guidelines</span>
                                     </a>
                                 </li>
-                                <li class="post__tag tag">
-                                    <a class="post__tag_link tag__link" href="">
-                                        #ui
+                                <li class="post-summary__item">
+                                    <a class="post-summary__link" href="#mobile">
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.6922 11.6922L12.9422 15.4422C12.8548 15.5297 12.7434 15.5893 12.6221 15.6135C12.5008 15.6376 12.375 15.6252 12.2608 15.5779C12.1465 15.5305 12.0488 15.4504 11.9802 15.3475C11.9115 15.2446 11.8749 15.1237 11.875 15V11.875H5C4.83424 11.875 4.67527 11.8092 4.55806 11.6919C4.44085 11.5747 4.375 11.4158 4.375 11.25V3C4.375 2.83424 4.44085 2.67527 4.55806 2.55806C4.67527 2.44085 4.83424 2.375 5 2.375C5.16576 2.375 5.32473 2.44085 5.44194 2.55806C5.55915 2.67527 5.625 2.83424 5.625 3V10.625H11.875V7.5C11.8749 7.37632 11.9115 7.25538 11.9802 7.15251C12.0488 7.04964 12.1465 6.96946 12.2608 6.92211C12.375 6.87477 12.5008 6.86239 12.6221 6.88654C12.7434 6.9107 12.8548 6.9703 12.9422 7.05781L16.6922 10.8078C16.7503 10.8659 16.7964 10.9348 16.8279 11.0107C16.8593 11.0865 16.8755 11.1679 16.8755 11.25C16.8755 11.3321 16.8593 11.4135 16.8279 11.4893C16.7964 11.5652 16.7503 11.6341 16.6922 11.6922Z"
+                                                fill="#878C91" />
+                                        </svg>
+                                        <span>Types of filters in mobile applications</span>
                                     </a>
                                 </li>
-                                <li class="post__tag tag">
-                                    <a class="post__tag_link tag__link" href="">
-                                        #mobile
+                                <li class="post-summary__item">
+                                    <a class="post-summary__link" href="#names">
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.6922 11.6922L12.9422 15.4422C12.8548 15.5297 12.7434 15.5893 12.6221 15.6135C12.5008 15.6376 12.375 15.6252 12.2608 15.5779C12.1465 15.5305 12.0488 15.4504 11.9802 15.3475C11.9115 15.2446 11.8749 15.1237 11.875 15V11.875H5C4.83424 11.875 4.67527 11.8092 4.55806 11.6919C4.44085 11.5747 4.375 11.4158 4.375 11.25V3C4.375 2.83424 4.44085 2.67527 4.55806 2.55806C4.67527 2.44085 4.83424 2.375 5 2.375C5.16576 2.375 5.32473 2.44085 5.44194 2.55806C5.55915 2.67527 5.625 2.83424 5.625 3V10.625H11.875V7.5C11.8749 7.37632 11.9115 7.25538 11.9802 7.15251C12.0488 7.04964 12.1465 6.96946 12.2608 6.92211C12.375 6.87477 12.5008 6.86239 12.6221 6.88654C12.7434 6.9107 12.8548 6.9703 12.9422 7.05781L16.6922 10.8078C16.7503 10.8659 16.7964 10.9348 16.8279 11.0107C16.8593 11.0865 16.8755 11.1679 16.8755 11.25C16.8755 11.3321 16.8593 11.4135 16.8279 11.4893C16.7964 11.5652 16.7503 11.6341 16.6922 11.6922Z"
+                                                fill="#878C91" />
+                                        </svg>
+                                        <span>The names for these filters are</span>
                                     </a>
                                 </li>
-                                <li class="post__tag tag">
-                                    <a class="post__tag_link tag__link" href="">
-                                        #ios
-                                    </a>
-                                </li>
-                                <li class="post__tag tag">
-                                    <a class="post__tag_link tag__link" href="">
-                                        #apple 
+                                <li class="post-summary__item">
+                                    <a class="post-summary__link" href="#applying">
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.6922 11.6922L12.9422 15.4422C12.8548 15.5297 12.7434 15.5893 12.6221 15.6135C12.5008 15.6376 12.375 15.6252 12.2608 15.5779C12.1465 15.5305 12.0488 15.4504 11.9802 15.3475C11.9115 15.2446 11.8749 15.1237 11.875 15V11.875H5C4.83424 11.875 4.67527 11.8092 4.55806 11.6919C4.44085 11.5747 4.375 11.4158 4.375 11.25V3C4.375 2.83424 4.44085 2.67527 4.55806 2.55806C4.67527 2.44085 4.83424 2.375 5 2.375C5.16576 2.375 5.32473 2.44085 5.44194 2.55806C5.55915 2.67527 5.625 2.83424 5.625 3V10.625H11.875V7.5C11.8749 7.37632 11.9115 7.25538 11.9802 7.15251C12.0488 7.04964 12.1465 6.96946 12.2608 6.92211C12.375 6.87477 12.5008 6.86239 12.6221 6.88654C12.7434 6.9107 12.8548 6.9703 12.9422 7.05781L16.6922 10.8078C16.7503 10.8659 16.7964 10.9348 16.8279 11.0107C16.8593 11.0865 16.8755 11.1679 16.8755 11.25C16.8755 11.3321 16.8593 11.4135 16.8279 11.4893C16.7964 11.5652 16.7503 11.6341 16.6922 11.6922Z"
+                                                fill="#878C91" />
+                                        </svg>
+                                        <span>Rules for applying filters in the application</span>
                                     </a>
                                 </li>
                             </ul>
-                            <p class="post__p">
-                                Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu ius.
-                            </p>
-                            <p class="post__p">
-                                Nulla aliquam per te, vis omnes lobortis ocurreret an. Ex per omnis feugait, vim eu voluptaria elaboraret. Ea ipsum constituto instructior est, cibo iriure facilisis ut per. Et posse equidem aliquando eos,
-                                <a class="link" href="">
-                                    nobis lobortis definitionem eos an.
-                                </a>
-                            </p>
-                            <p class="post__p">
-                                Vis ea nisl ceteros adversarium, te pro labore reprimique. Pri ut ipsum dicta. Similique intellegam an per, omnes tantas electram ut qui, nam in duis velit ceteros. At pro munere euismod, te munere quaerendum cum. Mel nihil eleifend cu. Vis in utroque fuisset, eu sit fabellas definiebas dissentiet.
-                            </p>
-                            <p class="post__p">
-                                Sit at audiam perpetua, et saepe corpora praesent cum. Dicit similique referrentur eam eu, ne omnes ancillae has. Quo labore quaestio ea, te lorem paulo signiferumque vis. Erant nostrum salutandi pri an.
-                            </p>
-                            <div class="post__image">
-                                <div class="post__image_alignment">
-                                    <img class="post__img" src="img/img-post.png" alt="">
+                        </div>
+                        <p class="post__p" id="general">
+                            Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option
+                            scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per
+                            aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu
+                            ius.
+                        </p>
+                        <p class="post__p">
+                            Nulla aliquam per te, vis omnes lobortis ocurreret an. Ex per omnis feugait, vim eu
+                            voluptaria elaboraret. Ea ipsum constituto instructior est, cibo iriure facilisis ut per. Et
+                            posse equidem aliquando eos,
+                            <a class="link" href="">
+                                nobis lobortis definitionem eos an.
+                            </a>
+                        </p>
+                        <p class="post__p">
+                            Vis ea nisl ceteros adversarium, te pro labore reprimique. Pri ut ipsum dicta. Similique
+                            intellegam an per, omnes tantas electram ut qui, nam in duis velit ceteros. At pro munere
+                            euismod, te munere quaerendum cum. Mel nihil eleifend cu. Vis in utroque fuisset, eu sit
+                            fabellas definiebas dissentiet.
+                        </p>
+                        <p class="post__p" id="mobile">
+                            Sit at audiam perpetua, et saepe corpora praesent cum. Dicit similique referrentur eam eu,
+                            ne omnes ancillae has. Quo labore quaestio ea, te lorem paulo signiferumque vis. Erant
+                            nostrum salutandi pri an.
+                        </p>
+                        <div class="post__image">
+                            <div class="post__image_alignment">
+                                <img class="post__img" src="img/img-post.png" alt="">
+                            </div>
+                        </div>
+                        <p class="post__p">
+                            Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option
+                            scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per
+                            aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu
+                            ius.
+                        </p>
+                        <p class="post__italc-grey">
+                            Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option
+                            scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per
+                            aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu
+                            ius.
+                        </p>
+                        <div class="post__image post__slider slider">
+                            <div class="post__image_alignment post__sliders">
+                                <div class="post__sliders_inner slider__inner slider__inner">
+                                    <img class="post__img post__slider_img slider__item" src="img/img-post.png" alt="">
+                                    <img class="post__img post__slider_img slider__item" src="img/img-home.png" alt="">
+                                    <img class="post__img post__slider_img slider__item" src="img/banner-background.png"
+                                        alt="">
                                 </div>
                             </div>
-                            <p class="post__p">
-                                Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu ius.
-                            </p>
-                            <p class="post__italc-grey">
-                                Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu ius.
-                            </p>
-                            <div class="post__image post__slider slider">
-                                <div class="post__image_alignment post__sliders">
-                                    <div class="post__sliders_inner slider__inner slider__inner">
-                                        <img class="post__img post__slider_img slider__item" src="img/img-post.png" alt="">
-                                        <img class="post__img post__slider_img slider__item" src="img/img-home.png" alt="">
-                                        <img class="post__img post__slider_img slider__item" src="img/banner-background.png" alt="">
+                            <div class="post__image_name">
+                                Lorem ipsum dolor sit amet, no omnes mollis per.
+                            </div>
+                            <div class="post__slider__switches">
+                                <ul class="post__slider_lists">
+                                </ul>
+                                <div class="post__slider_arrows">
+                                    <div class="post__slider_arrow">
+                                        <svg class="post__slider_arrow_svg" width="8" height="14" viewBox="0 0 8 14"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 13L1 7L7 1" stroke="#131313" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="post__slider_arrow post__slider_arrow_right">
+                                        <svg class="post__slider_arrow_svg" width="8" height="14" viewBox="0 0 8 14"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 13L7 7L1 1" stroke="#131313" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
                                     </div>
                                 </div>
-                                <div class="post__image_name">
-                                    Lorem ipsum dolor sit amet, no omnes mollis per.
-                                </div>
-                                <div class="post__slider__switches">
-                                    <ul class="post__slider_lists">
-                                    </ul>
-                                    <div class="post__slider_arrows">
-                                        <div class="post__slider_arrow">
-                                            <svg class="post__slider_arrow_svg" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M7 13L1 7L7 1" stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>                                                
-                                        </div>
-                                        <div class="post__slider_arrow post__slider_arrow_right">
-                                            <svg class="post__slider_arrow_svg" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 13L7 7L1 1" stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>                                                
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
-                            <p class="post__p">
-                                Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu ius.
-                            </p>
-                            <p class="post__p">
-                                Nulla aliquam per te, vis omnes lobortis ocurreret an. Ex per omnis feugait, vim eu voluptaria elaboraret. Ea ipsum constituto instructior est, cibo iriure facilisis ut per. Et posse equidem aliquando eos, nobis lobortis definitionem eos an.
-                            </p>
-                            <div class="post__image">
-                                <div class="post__image_alignment">
-                                    <img class="post__img" src="img/img-post.png" alt="">
-                                </div>
-                                <div class="post__image_name">
-                                    Lorem ipsum dolor sit amet, no omnes mollis per.
-                                </div>
+                        </div>
+                        <p class="post__p" id="names">
+                            Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option
+                            scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per
+                            aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu
+                            ius.
+                        </p>
+                        <p class="post__p">
+                            Nulla aliquam per te, vis omnes lobortis ocurreret an. Ex per omnis feugait, vim eu
+                            voluptaria elaboraret. Ea ipsum constituto instructior est, cibo iriure facilisis ut per. Et
+                            posse equidem aliquando eos, nobis lobortis definitionem eos an.
+                        </p>
+                        <div class="post__image">
+                            <div class="post__image_alignment">
+                                <img class="post__img" src="img/img-post.png" alt="">
                             </div>
-                            <p class="post__p">
-                                Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu ius.
-                            </p>
-                            <p class="post__p">
-                                Nulla aliquam per te, vis omnes lobortis ocurreret an. Ex per omnis feugait, vim eu voluptaria elaboraret. Ea ipsum constituto instructior est, cibo iriure facilisis ut per. Et posse equidem aliquando eos, nobis lobortis definitionem eos an.
-                            </p>
-                            <div class="post__video">
-                                <div class="post__video_alignment">
-                                    <div class="video__start">
-                                        <svg class="video__start_svg" width="68" height="48" viewBox="0 0 68 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect width="68" height="48" rx="6" transform="matrix(-1 0 0 1 68 0)" fill="#7421B0"/>
-                                            <path d="M42.5 23.134C43.1667 23.5189 43.1667 24.4811 42.5 24.866L30.5 31.7942C29.8333 32.1791 29 31.698 29 30.9282L29 17.0718C29 16.302 29.8333 15.8209 30.5 16.2058L42.5 23.134Z" fill="white"/>
-                                        </svg>                                            
-                                    </div>
-                                    <!-- <img class="post__img" src="img/img-post.png" alt=""> -->
-                                    <video class="post__video-elem" preload="metadata" src="img/Desktop 2022.06.24 - 13.17.36.02.mp4"></video>
-                                </div>
+                            <div class="post__image_name">
+                                Lorem ipsum dolor sit amet, no omnes mollis per.
                             </div>
-                            <p class="post__p">
-                                Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his:
-                            </p>
-                            <ol class="list__ol post__list_ol">
-                                <li class="item__list">
-                                    Lorem ipsum dolor sit amet, no omnes mollis per
-                                </li>
-                                <li class="item__list">
-                                    Lorem ipsum dolor sit amet, no omnes mollis per
-                                </li>
-                                <li class="item__list">
-                                    Lorem ipsum dolor sit amet, no omnes mollis per
-                                </li>
-                                <li class="item__list">
-                                    Lorem ipsum dolor sit amet, no omnes mollis per
-                                </li>
-                                <li class="item__list">
-                                    Lorem ipsum dolor sit amet, no omnes mollis per
-                                </li>
-                            </ol>
+                        </div>
+                        <p class="post__p">
+                            Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option
+                            scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his. Per
+                            aliquando persequeris et. Usu ei congue gubergren, iudico deseruisse at cum, velit nostro eu
+                            ius.
+                        </p>
+                        <p class="post__p">
+                            Nulla aliquam per te, vis omnes lobortis ocurreret an. Ex per omnis feugait, vim eu
+                            voluptaria elaboraret. Ea ipsum constituto instructior est, cibo iriure facilisis ut per. Et
+                            posse equidem aliquando eos, nobis lobortis definitionem eos an.
+                        </p>
+                        <div class="post__video" id="applying">
+                            <div class="post__video_alignment">
+                                <div class="video__start">
+                                    <svg class="video__start_svg" width="68" height="48" viewBox="0 0 68 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="68" height="48" rx="6" transform="matrix(-1 0 0 1 68 0)"
+                                            fill="#7421B0" />
+                                        <path
+                                            d="M42.5 23.134C43.1667 23.5189 43.1667 24.4811 42.5 24.866L30.5 31.7942C29.8333 32.1791 29 31.698 29 30.9282L29 17.0718C29 16.302 29.8333 15.8209 30.5 16.2058L42.5 23.134Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <!-- <img class="post__img" src="img/img-post.png" alt=""> -->
+                                <video class="post__video-elem" preload="metadata"
+                                    src="img/Desktop 2022.06.24 - 13.17.36.02.mp4"></video>
+                            </div>
+                        </div>
+                        <p class="post__p">
+                            Lorem ipsum dolor sit amet, no omnes mollis per. Eos id sanctus mandamus. Usu option
+                            scriptorem no, nonumes noluisse temporibus ius te, ut elit prima signiferumque his:
+                        </p>
+                        <ol class="list__ol post__list_ol">
+                            <li class="item__list">
+                                Lorem ipsum dolor sit amet, no omnes mollis per
+                            </li>
+                            <li class="item__list">
+                                Lorem ipsum dolor sit amet, no omnes mollis per
+                            </li>
+                            <li class="item__list">
+                                Lorem ipsum dolor sit amet, no omnes mollis per
+                            </li>
+                            <li class="item__list">
+                                Lorem ipsum dolor sit amet, no omnes mollis per
+                            </li>
+                            <li class="item__list">
+                                Lorem ipsum dolor sit amet, no omnes mollis per
+                            </li>
+                        </ol>
+
+                        <div class="post-pros">
+                            <div class="post-pros__title">Pros</div>
+                            <ul class="post-pros__list">
+                                <li class="post-pros__item">Nulla aliquam per te, vis omnes lobortis ocurreret an.</li>
+                                <li class="post-pros__item">Nulla aliquam per te, vis omnes lobortis ocurreret an.</li>
+                                <li class="post-pros__item">Nulla aliquam per te, vis omnes lobortis ocurreret an.</li>
+                                <li class="post-pros__item">Nulla aliquam per te, vis omnes lobortis ocurreret an.</li>
+                            </ul>
+                        </div>
+
+                        <div class="post-cons">
+                            <div class="post-cons__title">Cons</div>
+                            <ul class="post-cons__list">
+                                <li class="post-cons__item">Nulla aliquam per te, vis omnes lobortis ocurreret an.</li>
+                                <li class="post-cons__item">Nulla aliquam per te, vis omnes lobortis ocurreret an.</li>
+                                <li class="post-cons__item">Nulla aliquam per te, vis omnes lobortis ocurreret an.</li>
+                                <li class="post-cons__item">Nulla aliquam per te, vis omnes lobortis ocurreret an.</li>
+                            </ul>
                         </div>
                     </div>
-
-                    @@include('components/banner.html')
                 </div>
 
-                @@include('components/popular-tag.html')
+                @@include('components/banner.html')
+            </div>
 
-                @@include('components/modal.html')
-                <div class="margin-bottom-fixed"></div>
-            </div> 
+            @@include('components/popular-tag.html')
+
+            @@include('components/modal.html')
+            <div class="margin-bottom-fixed"></div>
         </div>
     </div>
+</div>
 
 @@include('layout/footer.html')
