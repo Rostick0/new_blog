@@ -136,7 +136,7 @@
 
         display: flex;
         grid-gap: 6px;
-        
+
         font-size: 12px;
         line-height: 150%;
 
@@ -263,7 +263,7 @@
         font-weight: 600;
 
         transition: .2s;
-     
+
         &:hover {
             color: #000;
 
@@ -285,7 +285,7 @@
     &__item {
         &>* {
             border-radius: 8px;
-          
+
             color: rgba(71, 84, 103, 1);
 
             display: inline-block;
@@ -296,7 +296,7 @@
             padding: 10px;
 
             transition: .2s;
-          
+
             min-width: 40px;
         }
     }
@@ -305,6 +305,36 @@
         &.active {
             background-color: #fff;
             color: rgba(24, 34, 48, 1);
+        }
+    }
+}
+
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 4px;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 125%;
+
+
+    &__item {
+        color: rgba(116, 33, 176, 1);
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+        text-decoration: none;
+
+        &.link {
+            color: rgba(136, 146, 160, 1);
+
+            &::after {
+                content: url(/img/chevron-right.svg);
+
+                width: 16px;
+                height: 16px;
+            }
         }
     }
 }
@@ -320,5 +350,9 @@
 @media (max-width: 768px) {
     .container {
         padding: 20px;
+    }
+
+    .container-none-mobile {
+        padding: 0;
     }
 }

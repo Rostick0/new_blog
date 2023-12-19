@@ -30,34 +30,7 @@
     }
 
     &-breadcrumbs {
-        display: flex;
-        flex-wrap: wrap;
-        grid-gap: 4px;
-
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 125%;
-
         margin-bottom: 24px;
-
-        &__item {
-            color: rgba(116, 33, 176, 1);
-            display: flex;
-            align-items: center;
-            column-gap: 4px;
-            text-decoration: none;
-
-            &.link {
-                color: rgba(136, 146, 160, 1);
-
-                &::after {
-                    content: url(/img/chevron-right.svg);
-
-                    width: 16px;
-                    height: 16px;
-                }
-            }
-        }
     }
 
     &__public {
