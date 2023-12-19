@@ -13,12 +13,15 @@
 @import './popular-tag';
 @import './authors';
 @import './author';
+@import './menu-mobile';
+
+html {
+    font-family: "Rubik";
+}
 
 .wrapper {
     background: #ECECF0;
     color: #000000;
-
-    font-family: 'Rubik';
 
     min-height: 100vh;
 }

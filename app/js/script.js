@@ -2,33 +2,33 @@ function throttle(func, ms) {
 
     let locked = false
 
-    return function() {
+    return function () {
 
-      if (locked) return
+        if (locked) return
 
-      const context = this
-      const args = arguments
+        const context = this
+        const args = arguments
 
-      locked = true
+        locked = true
 
-      setTimeout(() => {
+        setTimeout(() => {
 
-        func.apply(context, args)
-        locked = false
+            func.apply(context, args)
+            locked = false
 
-      }, ms)
+        }, ms)
 
     }
 }
 
 function debounce(func, ms) {
     return function (args) {
-      let previousCall = this.lastCall;
-      this.lastCall = Date.now();
-      if (previousCall && ((this.lastCall - previousCall) <= ms)) {
-        clearTimeout(this.lastCallTimer);
-      }
-      this.lastCallTimer = setTimeout(() => func(args), ms);
+        let previousCall = this.lastCall;
+        this.lastCall = Date.now();
+        if (previousCall && ((this.lastCall - previousCall) <= ms)) {
+            clearTimeout(this.lastCallTimer);
+        }
+        this.lastCallTimer = setTimeout(() => func(args), ms);
     }
 }
 
@@ -85,7 +85,7 @@ function slider(slides) {
     let counterSlide = translateXCounter
 
     slides.forEach(elem => {
-        elem.style = `transform: translateX(${counterSlide+=100}%);`
+        elem.style = `transform: translateX(${counterSlide += 100}%);`
     })
 
     let counterSlideItem = translateXCounter / -100 - 1;
@@ -106,7 +106,7 @@ if (postSliderList && postSliderArrowLeft && postSliderArrowRight) {
     postSliderList.forEach((elem, index) => {
         elem.addEventListener('click', e => {
             translateXCounter = -100 * (index + 1);
-    
+
             slider(postSliderImg);
         })
     });
@@ -115,9 +115,9 @@ if (postSliderList && postSliderArrowLeft && postSliderArrowRight) {
         if (translateXCounter >= -100) {
             return;
         }
-    
+
         translateXCounter += 100
-    
+
         slider(postSliderImg);
     });
 
@@ -125,9 +125,9 @@ if (postSliderList && postSliderArrowLeft && postSliderArrowRight) {
         if (postSliderImg.length * -100 >= translateXCounter) {
             return;
         }
-    
+
         translateXCounter -= 100;
-    
+
         slider(postSliderImg);
     });
 
@@ -148,7 +148,7 @@ if (modal) {
             removeModal();
         }
     });
-    
+
     modalClose.addEventListener('click', e => {
         removeModal();
     })
@@ -206,4 +206,16 @@ if (videoStart) {
         video.play();
         video.controls = true;
     })
+}
+
+
+// mobile-menu
+const menuMmobileCategories = document.querySelector('.menu-mobile-categories');
+const mobileMenuButton = document.querySelector('.menu-mobile__item._menu');
+const mobileMenuClose = document.querySelector('.menu-mobile-categories__close');
+
+if (menuMmobileCategories && mobileMenuButton && mobileMenuClose) {
+    mobileMenuButton.onclick = () => menuMmobileCategories.classList.toggle('_active');
+
+    mobileMenuClose.onclick = () => menuMmobileCategories.classList.contains('_active') && menuMmobileCategories.classList.remove('_active');
 }

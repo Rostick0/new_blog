@@ -1,0 +1,127 @@
+.menu-mobile {
+    background-color: #fff;
+
+    border-top: 1px solid rgba(238, 238, 238, 1);
+
+    display: none;
+
+    padding: 0 10px;
+
+    position: sticky;
+    bottom: 0;
+
+    height: 52px;
+
+    z-index: 12;
+
+    &__nav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 100%;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .fill,
+        .stroke {
+            transition: .3s;
+        }
+
+        &:hover {
+
+            .fill {
+                fill: #7421B0;
+            }
+
+            .stroke {
+                stroke: #7421B0;
+            }
+        }
+    }
+
+    &-categories {
+        background: rgba(0, 0, 0, 0.4);
+
+        display: none;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        position: fixed;
+        left: 0;
+        bottom: 52px;
+
+        width: 100%;
+        height: 100%;
+
+        &__inner {
+            background-color: #fff;
+
+            border-top-right-radius: 12px;
+            border-top-right-radius: 12px;
+
+            padding: 16px;
+            padding-bottom: 20px;
+
+            overflow: auto;
+
+            width: 100%;
+            max-height: calc(100vh - 52px);
+        }
+
+        &__top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        &__title {
+            color: #8892A0;
+
+            font-weight: 600;
+
+            margin-top: 8px;
+        }
+
+        &__close {
+            display: flex;
+        }
+
+        &__bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 24px;
+
+            max-height: 100%;
+        }
+
+        &__link {
+            color: #000;
+
+            font-weight: 500;
+
+            transition: .2s;
+
+            &:hover {
+                color: rgba(116, 33, 176, 1);
+            }
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .menu-mobile {
+        display: block;
+
+
+        &-categories {
+            &._active {
+                display: flex;
+            }
+        }
+    }
+}
