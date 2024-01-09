@@ -132,6 +132,15 @@
                 }
             }
 
+            &._active {
+                background: #fff;
+                font-weight: 500;
+
+                .popular-tag__href {
+                color: rgba(116, 33, 176, 1);
+                }
+            }
+
             .popular-tag__href {
                 color: #000000;
 

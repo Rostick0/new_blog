@@ -16,3 +16,17 @@
     font-weight: 500;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Rubik';
+    src: local('Rubik SemiBold'), local('Rubik-SemiBold'), url('../fonts/Rubik-SemiBold.woff2') format('woff2'), url('../Rubik-SemiBold.woff') format('woff'), url('../Rubik-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: local('Rubik Bold'), local('Rubik-Bold'), url('../fonts/Rubik-Bold.woff2') format('woff2'), url('../Rubik-Bold.woff') format('woff'), url('../Rubik-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
